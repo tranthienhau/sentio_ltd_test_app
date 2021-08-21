@@ -1,8 +1,10 @@
-git_url("https://github.com/duynb92/apple-certificates.git")
+# Please enter your private git repo which stores all your certificates below
+# git_url("") # Uncomment after filled
 storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
-username("duy@duynb.com") # Your Apple Developer Portal username
+# Please enter your Apple Developer username below
+# username("") # Your Apple Developer Portal username, uncomment after filled
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
