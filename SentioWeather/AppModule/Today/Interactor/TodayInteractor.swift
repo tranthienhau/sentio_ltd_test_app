@@ -5,8 +5,6 @@
 //  Created by Duy Nguyen on 8/21/21.
 //
 
-typealias WeatherForecastResponse = (weatherDatas: [WeatherDataResponse], location: LocationResponse)
-
 protocol TodayInteracting {
     func fetchWeatherData(
         latitude: Double,
