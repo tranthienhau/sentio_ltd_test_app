@@ -10,8 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Setup dependencies
+        setupDependencies()
+
         let view = WeatherTabBuilder.build()
         let navigationController = UINavigationController(rootViewController: view)
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -20,5 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    private func setupDependencies() {
+        let dependencyContainer = DependencyContainer.sharedInstance
+        dependencyContainer.registerDefaultServices()
+    }
 }
-

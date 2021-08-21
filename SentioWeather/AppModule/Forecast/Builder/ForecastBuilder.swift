@@ -16,7 +16,7 @@ final class ForecaseBuilder {
         item.title = "Forecast"
         item.image = UIImage(named: "home_icon") // TODO: icon
         view.tabBarItem = item
-        
+
         return view
     }
 }

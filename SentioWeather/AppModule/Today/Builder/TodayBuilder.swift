@@ -14,8 +14,7 @@ final class TodayBuilder {
         item.title = "Today"
         item.image = UIImage(named: "home_icon") // TODO: icon
         view.tabBarItem = item
-        
+
         return view
     }
 }
-
