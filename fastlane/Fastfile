@@ -17,11 +17,11 @@
 ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'ZHV5bmI5MjpnaHBfQTJqM2NYU2JVb3RHQ1F4dUtIY2ZvM0JaNHJmMVZFM0wwZ0hX'
 
 # Application variables
-APP_IDENTIFIER = "com.agileops.blueprint"
-SCHEME = "blueprint"
+APP_IDENTIFIER = "com.hautran.SentioWeather"
+SCHEME = "SentioWeather"
 TESTSCHEME = SCHEME + "Tests"
-WORKSPACE = "blueprint.xcworkspace"
-PROJECT = "blueprint.xcodeproj"
+WORKSPACE = "SentioWeather.xcworkspace"
+PROJECT = "SentioWeather.xcodeproj"
 
 default_platform(:ios)
 

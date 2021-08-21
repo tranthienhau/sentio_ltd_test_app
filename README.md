@@ -1,7 +1,6 @@
-# iOS Application Architecture Blueprint
+# iOS Weather App
 
-This is a blueprint template for iOS application which adopt VIPER architecture.
-Use this a good starting point for robust iOS application which are testable, scable.
+This is weather app to demonstrate skills set for iOS developer position at Sentio Ltd.
 
 ## Documentation
 
@@ -76,19 +75,22 @@ SwiftLint is configured to run for every build action, ensure high-quality code 
 
 ### Fastlane
 
+This setup using `match` to centralized profiles and certifications, which allow to share between developers. The main goal is to build the app with a few simple commands, without any struggle.
 
 **Cert & Profile**
+Only works if required informations are filled in in Matchfile. 
 
 ```
 fastlane ios cert_dev
-fastlane ios cert_distribution
+fastlane ios cert_release
 ```
 
 **Build**
+Only works if required informations are filled in in Matchfile.
 
 ```
 fastlane ios build_dev
-fastlane ios build_distribution
+fastlane ios build_release
 ```
 
 **Test**
