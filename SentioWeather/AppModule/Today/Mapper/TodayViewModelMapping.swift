@@ -31,9 +31,10 @@ final class TodayViewModelMapper: TodayViewModelMapping {
     }
 
     private func todayWeatherDateResponses(responses: [WeatherDataResponse]) -> [WeatherDataResponse] {
-        return responses.filter { weatherData -> Bool in
-            let datetime = formatter.date(from: weatherData.datetime)
-            return formatter.isSameDate(lhs: datetime, rhs: Date())
+        return responses.filter { [weak self] weatherData -> Bool in
+            guard let self = self else { return false }
+            let datetime = self.formatter.date(from: weatherData.datetime)
+            return self.formatter.isSameDate(lhs: datetime, rhs: Date())
         }
     }
 }

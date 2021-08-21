@@ -32,12 +32,11 @@ class TodayViewController: UIViewController {
 }
 
 extension TodayViewController: TodayView {
-    func showError(title: String, message: String) {
+    func showError(title _: String, message _: String) {
         // TODO:
     }
 
-    func showData(viewModel: TodayViewModel) {
+    func showData(viewModel _: TodayViewModel) {
         // TODO:
-        
     }
 }
