@@ -15,17 +15,15 @@ struct ForecastCellViewModel {
 }
 
 class ForecastCell: UITableViewCell {
-
-    @IBOutlet weak var ivWeather: UIImageView!
-    @IBOutlet weak var lbTime: UILabel!
-    @IBOutlet weak var lbWeather: UILabel!
-    @IBOutlet weak var lbTemperature: UILabel!
+    @IBOutlet var ivWeather: UIImageView!
+    @IBOutlet var lbTime: UILabel!
+    @IBOutlet var lbWeather: UILabel!
+    @IBOutlet var lbTemperature: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func update(viewModel: ForecastCellViewModel) {
-    }
+    func update(viewModel _: ForecastCellViewModel) {}
 }

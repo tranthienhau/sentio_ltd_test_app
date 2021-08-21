@@ -28,7 +28,7 @@ final class TodayViewModelMapper: TodayViewModelMapping {
             ),
             locationName: response.location.name,
             mainWeather: todayDatas.first?.weather.first?.main ?? "",
-            icon: self.stringFormatter.icon(name: todayDatas.first?.weather.first?.icon) ?? "",
+            icon: stringFormatter.icon(name: todayDatas.first?.weather.first?.icon) ?? "",
             pop: todayDatas.first?.pop ?? 0,
             windSpeed: todayDatas.first?.wind.speed ?? 0,
             sys: todayDatas.first?.sys.pod ?? "",

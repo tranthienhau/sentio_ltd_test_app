@@ -5,8 +5,8 @@
 //  Created by Hau Tran on 8/21/21.
 //
 
-import UIKit
 import SDWebImage
+import UIKit
 
 protocol TodayView: AnyObject {
     func showError(title: String, message: String)
@@ -14,17 +14,16 @@ protocol TodayView: AnyObject {
 }
 
 class TodayViewController: UIViewController {
-
-    @IBOutlet weak var vTopBar: TopBarView!
-    @IBOutlet weak var ivWeather: UIImageView!
-    @IBOutlet weak var lbLocation: UILabel!
-    @IBOutlet weak var lbTemperature: UILabel!
-    @IBOutlet weak var lbWeather: UILabel!
-    @IBOutlet weak var vPop: WeatherInfoItemView!
-    @IBOutlet weak var vRain: WeatherInfoItemView!
-    @IBOutlet weak var vGrndLevel: WeatherInfoItemView!
-    @IBOutlet weak var vWindspeed: WeatherInfoItemView!
-    @IBOutlet weak var vSys: WeatherInfoItemView!
+    @IBOutlet var vTopBar: TopBarView!
+    @IBOutlet var ivWeather: UIImageView!
+    @IBOutlet var lbLocation: UILabel!
+    @IBOutlet var lbTemperature: UILabel!
+    @IBOutlet var lbWeather: UILabel!
+    @IBOutlet var vPop: WeatherInfoItemView!
+    @IBOutlet var vRain: WeatherInfoItemView!
+    @IBOutlet var vGrndLevel: WeatherInfoItemView!
+    @IBOutlet var vWindspeed: WeatherInfoItemView!
+    @IBOutlet var vSys: WeatherInfoItemView!
 
     var presenter: TodayPresenting?
 

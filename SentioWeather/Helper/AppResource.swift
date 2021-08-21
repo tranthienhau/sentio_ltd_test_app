@@ -8,15 +8,11 @@
 import Foundation
 import UIKit
 
-struct AppColors {
-//    static let TextGreen = UIColor.init(red: 49/255, green: 170/255, blue: 134/255, alpha: 1.0)
-}
-//
-struct AppFonts {
-//    static let bold = "AvenirNextLTPro-Bold"
-}
+struct AppColors {}
 
-struct AppImages {
+struct AppFonts {}
+
+enum AppImages {
     static let iconPop = UIImage(named: "iconPop")
     static let iconRain = UIImage(named: "iconRain")
     static let iconGrndLevel = UIImage(named: "iconGrndLevel")
