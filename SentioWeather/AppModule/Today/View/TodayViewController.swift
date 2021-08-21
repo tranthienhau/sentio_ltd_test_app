@@ -2,7 +2,7 @@
 //  TodayViewController.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import UIKit
@@ -15,6 +15,10 @@ protocol TodayView: AnyObject {
 class TodayViewController: UIViewController {
     var presenter: TodayPresenter?
 
+class TodayViewController: UIViewController {
+    
+    var presenter : TodayViewPresenterProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,4 +43,8 @@ extension TodayViewController: TodayView {
     func showData(viewModel _: TodayViewModel) {
         // TODO:
     }
+}
+
+extension TodayViewController : TodayViewControllerProtocol {
+    
 }
