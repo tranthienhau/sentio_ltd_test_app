@@ -5,8 +5,8 @@
 //  Created by Duy Nguyen on 8/21/21.
 //
 
-protocol WeatherTabPresenting {
-    func onViewDidLoad()
+protocol WeatherTabPresenting: AnyObject {
+    func onViewWillAppear()
 }
 
 class WeatherTabPresenter {
@@ -17,7 +17,7 @@ class WeatherTabPresenter {
 }
 
 extension WeatherTabPresenter: WeatherTabPresenting {
-    func onViewDidLoad() {
+    func onViewWillAppear() {
         router.setupTabBars()
     }
 }

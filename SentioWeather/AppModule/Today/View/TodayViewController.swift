@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol TodayView: AnyObject {
+    func showError(title: String, message: String)
+    func showData(viewModel: TodayViewModel)
+}
+
 class TodayViewController: UIViewController {
+    var presenter: TodayPresenter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,13 +25,18 @@ class TodayViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
 
-    /*
-     // MARK: - Navigation
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.onViewWillAppear()
+    }
+}
 
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
+extension TodayViewController: TodayView {
+    func showError(title _: String, message _: String) {
+        // TODO:
+    }
+
+    func showData(viewModel _: TodayViewModel) {
+        // TODO:
+    }
 }

@@ -15,6 +15,18 @@ class DependencyContainer {
         register(service: RestClient.self) { _ in
             RestClientImpl()
         }
+        register(service: WeatherRepositoring.self) { resolver in
+            WeatherRepository(restClient: resolver.resolve(RestClient.self)!)
+        }
+        register(service: DateTimeFormatting.self) { _ in
+            DateTimeFormatter()
+        }
+        register(service: StringFormatting.self) { _ in
+            StringFormatter()
+        }
+        register(service: WeatherServicing.self) { resolver in
+            WeatherService(repository: resolver.resolve(WeatherRepositoring.self)!)
+        }
     }
 
     func register<T>(service _: T.Type, factory: @escaping (Resolver) -> T) {

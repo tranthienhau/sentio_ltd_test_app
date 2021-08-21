@@ -10,6 +10,7 @@ target 'SentioWeather' do
   pod 'Moya'
   pod 'NVActivityIndicatorView'
   pod 'SwiftLint'
+  pod 'SDWebImage'
 
   target 'SentioWeatherTests' do
     inherit! :search_paths

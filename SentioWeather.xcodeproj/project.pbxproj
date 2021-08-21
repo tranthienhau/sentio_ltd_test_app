@@ -32,7 +32,14 @@
 		26DEB21C26D0C9A7004681F3 /* WeatherResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB21B26D0C9A7004681F3 /* WeatherResource.swift */; };
 		26DEB22126D0CA29004681F3 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB22026D0CA29004681F3 /* BaseTargetType.swift */; };
 		26DEB22726D0CBE7004681F3 /* FetchWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB22626D0CBE7004681F3 /* FetchWeatherRequest.swift */; };
-		26DEB22C26D0CD38004681F3 /* WeatherDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB22B26D0CD38004681F3 /* WeatherDataResponse.swift */; };
+		26DEB22C26D0CD38004681F3 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB22B26D0CD38004681F3 /* WeatherResponse.swift */; };
+		26DEB23226D0EBE0004681F3 /* TodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB23126D0EBE0004681F3 /* TodayPresenter.swift */; };
+		26DEB23826D0EC3C004681F3 /* TodayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB23726D0EC3C004681F3 /* TodayInteractor.swift */; };
+		26DEB24426D0EFFD004681F3 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB24326D0EFFD004681F3 /* TodayViewModel.swift */; };
+		26DEB24A26D0F11F004681F3 /* TodayViewModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB24926D0F11F004681F3 /* TodayViewModelMapping.swift */; };
+		26DEB25026D0F36A004681F3 /* DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB24F26D0F36A004681F3 /* DateTimeFormatter.swift */; };
+		26DEB26626D0FEB2004681F3 /* StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB26526D0FEB2004681F3 /* StringFormatting.swift */; };
+		26DEB28E26D10311004681F3 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB28D26D10311004681F3 /* WeatherService.swift */; };
 		C12EDF13226C0DCF004D4DD2 /* Pods_SentioWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB796DCE0C2161E236C3AD4 /* Pods_SentioWeatherTests.framework */; };
 		EDCB92494EAD764A1C58E4F5 /* Pods_SentioWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5ACB652D5D9103A958290 /* Pods_SentioWeather.framework */; };
 /* End PBXBuildFile section */
@@ -86,7 +93,14 @@
 		26DEB21B26D0C9A7004681F3 /* WeatherResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResource.swift; sourceTree = "<group>"; };
 		26DEB22026D0CA29004681F3 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		26DEB22626D0CBE7004681F3 /* FetchWeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherRequest.swift; sourceTree = "<group>"; };
-		26DEB22B26D0CD38004681F3 /* WeatherDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataResponse.swift; sourceTree = "<group>"; };
+		26DEB22B26D0CD38004681F3 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		26DEB23126D0EBE0004681F3 /* TodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenter.swift; sourceTree = "<group>"; };
+		26DEB23726D0EC3C004681F3 /* TodayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractor.swift; sourceTree = "<group>"; };
+		26DEB24326D0EFFD004681F3 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		26DEB24926D0F11F004681F3 /* TodayViewModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModelMapping.swift; sourceTree = "<group>"; };
+		26DEB24F26D0F36A004681F3 /* DateTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormatter.swift; sourceTree = "<group>"; };
+		26DEB26526D0FEB2004681F3 /* StringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatting.swift; sourceTree = "<group>"; };
+		26DEB28D26D10311004681F3 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		30BFF822EFEFE2B3133C49BB /* Pods-SentioWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FB796DCE0C2161E236C3AD4 /* Pods_SentioWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentioWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9345FD30EF62323326C03CB8 /* Pods-SentioWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather.debug.xcconfig"; path = "Target Support Files/Pods-SentioWeather/Pods-SentioWeather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +232,10 @@
 		26DEB1B126D0B243004681F3 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				26DEB24826D0F115004681F3 /* Mapper */,
+				26DEB24226D0EFF1004681F3 /* ViewModel */,
+				26DEB23626D0EC31004681F3 /* Interactor */,
+				26DEB23026D0EBD6004681F3 /* Presenter */,
 				26DEB1D926D0BE79004681F3 /* View */,
 				26DEB1D226D0BE21004681F3 /* Builder */,
 			);
@@ -303,6 +321,9 @@
 		26DEB20326D0C342004681F3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				26DEB28C26D10306004681F3 /* Weather */,
+				26DEB26426D0FE9A004681F3 /* StringFomatter */,
+				26DEB24E26D0F360004681F3 /* DateTime */,
 				26DEB21226D0C672004681F3 /* Network */,
 				26DEB20B26D0C61C004681F3 /* Repository */,
 				26DEB20526D0C35B004681F3 /* Dependency */,
@@ -356,9 +377,65 @@
 			isa = PBXGroup;
 			children = (
 				26DEB22626D0CBE7004681F3 /* FetchWeatherRequest.swift */,
-				26DEB22B26D0CD38004681F3 /* WeatherDataResponse.swift */,
+				26DEB22B26D0CD38004681F3 /* WeatherResponse.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		26DEB23026D0EBD6004681F3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB23126D0EBE0004681F3 /* TodayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		26DEB23626D0EC31004681F3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB23726D0EC3C004681F3 /* TodayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		26DEB24226D0EFF1004681F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB24326D0EFFD004681F3 /* TodayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		26DEB24826D0F115004681F3 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB24926D0F11F004681F3 /* TodayViewModelMapping.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		26DEB24E26D0F360004681F3 /* DateTime */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB24F26D0F36A004681F3 /* DateTimeFormatter.swift */,
+			);
+			path = DateTime;
+			sourceTree = "<group>";
+		};
+		26DEB26426D0FE9A004681F3 /* StringFomatter */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB26526D0FEB2004681F3 /* StringFormatting.swift */,
+			);
+			path = StringFomatter;
+			sourceTree = "<group>";
+		};
+		26DEB28C26D10306004681F3 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				26DEB28D26D10311004681F3 /* WeatherService.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		4F6DE09CB83CFA716CADB625 /* Frameworks */ = {
@@ -383,6 +460,7 @@
 				26D5254826D0A932005D73E6 /* Frameworks */,
 				26D5254926D0A932005D73E6 /* Resources */,
 				A708DB751B1CBA280AC453AF /* [CP] Embed Pods Frameworks */,
+				26DEB27326D0FFF5004681F3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -527,6 +605,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		26DEB27326D0FFF5004681F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint --config \"${PROJECT_DIR}/.swiftlint.yml\" --strict\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		5F29273DD7F85DB0D49567CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -613,17 +708,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DEB1F626D0BF64004681F3 /* WeatherTabBuilder.swift in Sources */,
+				26DEB25026D0F36A004681F3 /* DateTimeFormatter.swift in Sources */,
 				26DEB1CB26D0BC69004681F3 /* WeatherTabRouter.swift in Sources */,
+				26DEB28E26D10311004681F3 /* WeatherService.swift in Sources */,
 				26DEB21C26D0C9A7004681F3 /* WeatherResource.swift in Sources */,
 				26DEB1DC26D0BE87004681F3 /* TodayViewController.swift in Sources */,
-				26DEB22C26D0CD38004681F3 /* WeatherDataResponse.swift in Sources */,
+				26DEB22C26D0CD38004681F3 /* WeatherResponse.swift in Sources */,
 				26DEB1D526D0BE3B004681F3 /* TodayBuilder.swift in Sources */,
 				26DEB22126D0CA29004681F3 /* BaseTargetType.swift in Sources */,
+				26DEB24A26D0F11F004681F3 /* TodayViewModelMapping.swift in Sources */,
 				26DEB1EC26D0BEC0004681F3 /* ForecaseViewController.swift in Sources */,
 				26DEB22726D0CBE7004681F3 /* FetchWeatherRequest.swift in Sources */,
 				26DEB20726D0C3C7004681F3 /* DependencyContainer.swift in Sources */,
 				26DEB20E26D0C63C004681F3 /* WeatherRepository.swift in Sources */,
+				26DEB26626D0FEB2004681F3 /* StringFormatting.swift in Sources */,
+				26DEB23826D0EC3C004681F3 /* TodayInteractor.swift in Sources */,
+				26DEB24426D0EFFD004681F3 /* TodayViewModel.swift in Sources */,
 				26DEB21426D0C67B004681F3 /* RestClient.swift in Sources */,
+				26DEB23226D0EBE0004681F3 /* TodayPresenter.swift in Sources */,
 				26D5255326D0A932005D73E6 /* ViewController.swift in Sources */,
 				26DEB1BE26D0BA42004681F3 /* WeatherTabViewController.swift in Sources */,
 				26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */,

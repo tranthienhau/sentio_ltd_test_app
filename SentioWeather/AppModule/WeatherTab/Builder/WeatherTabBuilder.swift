@@ -10,9 +10,10 @@ import UIKit
 final class WeatherTabBuilder {
     static func build() -> UIViewController {
         let view = WeatherTabViewController()
-        let router = WeatherTabRouter(viewController: view)
+        let router = WeatherTabRouter()
         let presenter = WeatherTabPresenter(router: router)
         view.presenter = presenter
+        router.viewController = view
         return view
     }
 }

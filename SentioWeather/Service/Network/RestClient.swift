@@ -20,7 +20,11 @@ class RestClientImpl: RestClient {
         target: T,
         completion: @escaping (Result<D, Error>) -> Void
     ) {
-        let provider = MoyaProvider<T>(plugins: [NetworkLoggerPlugin()])
+        let provider = MoyaProvider<T>(plugins: [
+                                        NetworkLoggerPlugin(
+                                            configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)
+                                        )
+        ])
         provider.request(target) { result in
             switch result {
             case let .success(response):
@@ -28,6 +32,7 @@ class RestClientImpl: RestClient {
                     let results = try JSONDecoder().decode(D.self, from: response.data)
                     completion(.success(results))
                 } catch {
+                    print(error)
                     completion(.failure(error))
                 }
             case let .failure(error):

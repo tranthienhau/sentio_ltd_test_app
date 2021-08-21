@@ -15,7 +15,7 @@ extension WeatherResource: BaseTargetType {
     var path: String {
         switch self {
         case .fetch:
-            return "forecase"
+            return "forecast"
         }
     }
 
@@ -29,7 +29,7 @@ extension WeatherResource: BaseTargetType {
     var task: Task {
         switch self {
         case let .fetch(params: params):
-            return .requestParameters(parameters: params.bodyParameters(), encoding: JSONEncoding.default)
+            return .requestParameters(parameters: params.bodyParameters(), encoding: URLEncoding.default)
         }
     }
 }

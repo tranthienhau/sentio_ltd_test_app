@@ -17,7 +17,7 @@ class WeatherTabViewController: UITabBarController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.onViewDidLoad()
+        presenter?.onViewWillAppear()
     }
 
     private func setupAppreance() {

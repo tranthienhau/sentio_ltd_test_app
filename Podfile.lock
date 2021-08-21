@@ -7,12 +7,16 @@ PODS:
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SwiftLint (0.43.1)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
   - Moya
   - NVActivityIndicatorView
+  - SDWebImage
   - SwiftLint
   - Swinject
 
@@ -21,6 +25,7 @@ SPEC REPOS:
     - Alamofire
     - Moya
     - NVActivityIndicatorView
+    - SDWebImage
     - SwiftLint
     - Swinject
 
@@ -28,9 +33,10 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: f7ddbff43cfef9c43a1ce73168f8e2008001a832
+PODFILE CHECKSUM: 31fcc91ce95cc8244b3004d8278b9dc5d35b8c7f
 
 COCOAPODS: 1.10.1

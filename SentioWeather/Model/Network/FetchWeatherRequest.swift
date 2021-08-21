@@ -16,7 +16,7 @@ extension FetchWeatherRequest {
         return [
             "units": units,
             "lat": latitude,
-            "lon": longitude,
+            "lon": longitude
         ]
     }
 }

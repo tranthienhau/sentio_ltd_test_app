@@ -15,6 +15,14 @@ final class TodayBuilder {
         item.image = UIImage(named: "home_icon") // TODO: icon
         view.tabBarItem = item
 
+        let service: WeatherServicing = DependencyContainer.sharedInstance.getService()
+        let formatter: DateTimeFormatting = DependencyContainer.sharedInstance.getService()
+        let stringFormatter: StringFormatting = DependencyContainer.sharedInstance.getService()
+        let mapper = TodayViewModelMapper(formatter: formatter, stringFormatter: stringFormatter)
+        let interactor = TodayInteractor(service: service)
+        let presenter = TodayPresenter(view: view, interactor: interactor, mapper: mapper)
+        view.presenter = presenter
+
         return view
     }
 }
