@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -186,15 +184,15 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="96O-LQ-grN">
                                                     <rect key="frame" x="0.0" y="21" width="375" height="50"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-Ek-Fc4" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-Ek-Fc4" customClass="WeatherInfoItemView" customModule="SentioWeather" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJm-w8-x93" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJm-w8-x93" customClass="WeatherInfoItemView" customModule="SentioWeather" customModuleProvider="target">
                                                             <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2V-sb-cW0" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2V-sb-cW0" customClass="WeatherInfoItemView" customModule="SentioWeather" customModuleProvider="target">
                                                             <rect key="frame" x="250" y="0.0" width="125" height="50"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
@@ -206,11 +204,11 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0dR-H6-Xbz">
                                                     <rect key="frame" x="0.0" y="91" width="375" height="50"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsX-NN-vTL" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsX-NN-vTL" customClass="WeatherInfoItemView" customModule="SentioWeather" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJE-Jt-wuw" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJE-Jt-wuw" customClass="WeatherInfoItemView" customModule="SentioWeather" customModuleProvider="target">
                                                             <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>

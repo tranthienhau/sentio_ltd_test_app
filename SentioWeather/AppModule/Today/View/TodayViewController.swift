@@ -20,11 +20,11 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var lbLocation: UILabel!
     @IBOutlet weak var lbTemperature: UILabel!
     @IBOutlet weak var lbWeather: UILabel!
-    @IBOutlet weak var vPop: ItemWheatherInforView!
-    @IBOutlet weak var vRain: ItemWheatherInforView!
-    @IBOutlet weak var vGrndLevel: ItemWheatherInforView!
-    @IBOutlet weak var vWindspeed: ItemWheatherInforView!
-    @IBOutlet weak var vSys: ItemWheatherInforView!
+    @IBOutlet weak var vPop: WeatherInfoItemView!
+    @IBOutlet weak var vRain: WeatherInfoItemView!
+    @IBOutlet weak var vGrndLevel: WeatherInfoItemView!
+    @IBOutlet weak var vWindspeed: WeatherInfoItemView!
+    @IBOutlet weak var vSys: WeatherInfoItemView!
 
     var presenter: TodayPresenting?
 
@@ -55,6 +55,7 @@ extension TodayViewController: TodayView {
         lbLocation.text = viewModel.locationName
         lbTemperature.text = viewModel.temperature
         lbWeather.text = viewModel.mainWeather
+        // TODO: fix??
         vPop.setDataWheather(image: AppImages.iconPop!, infor: "\(viewModel.pop * 100)%")
         vRain.setDataWheather(image: AppImages.iconRain!, infor: "\(viewModel.rain) mm")
         vGrndLevel.setDataWheather(image: AppImages.iconGrndLevel!, infor: "\(viewModel.grndLevel) hPa")

@@ -1,5 +1,5 @@
 //
-//  ItemWheatherInforView.swift
+//  WeatherInfoItemView.swift
 //  SentioWeather
 //
 //  Created by DatNguyen on 21/08/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ItemWheatherInforView: UIView {
+class WeatherInfoItemView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet var ivIconWeather: UIImageView!
     @IBOutlet var lbInforWeather: UILabel!
@@ -25,7 +25,7 @@ class ItemWheatherInforView: UIView {
     }
 
     func setUpView() {
-        Bundle.main.loadNibNamed("ItemWheatherInforView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("WeatherInfoItemView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
