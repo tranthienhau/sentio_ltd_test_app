@@ -7,6 +7,7 @@
 
 import SDWebImage
 import UIKit
+import SDWebImage
 
 protocol TodayView: AnyObject {
     func showError(title: String, message: String)

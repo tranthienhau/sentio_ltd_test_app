@@ -17,5 +17,4 @@ struct TodayViewModel {
     let sys: String
     let grndLevel: String
     let rain: String
-    // ....
 }

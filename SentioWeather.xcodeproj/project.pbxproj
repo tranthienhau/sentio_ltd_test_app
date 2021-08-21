@@ -61,6 +61,8 @@
 		AAB9A06326D1016A006C10F9 /* TopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB9A06226D1016A006C10F9 /* TopBarView.xib */; };
 		AAB9A06A26D10505006C10F9 /* ForecastViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9A06926D10505006C10F9 /* ForecastViewRouter.swift */; };
 		AAC27D7D26D1482D007663F4 /* AppResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC27D7C26D1482D007663F4 /* AppResource.swift */; };
+		AAC27D8526D14E4F007663F4 /* InforWeatherTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC27D8326D14E4F007663F4 /* InforWeatherTableCell.swift */; };
+		AAC27D8626D14E4F007663F4 /* InforWeatherTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC27D8426D14E4F007663F4 /* InforWeatherTableCell.xib */; };
 		C12EDF13226C0DCF004D4DD2 /* Pods_SentioWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB796DCE0C2161E236C3AD4 /* Pods_SentioWeatherTests.framework */; };
 		EDCB92494EAD764A1C58E4F5 /* Pods_SentioWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5ACB652D5D9103A958290 /* Pods_SentioWeather.framework */; };
 /* End PBXBuildFile section */
@@ -152,6 +154,8 @@
 		AAB9A06226D1016A006C10F9 /* TopBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarView.xib; sourceTree = "<group>"; };
 		AAB9A06926D10505006C10F9 /* ForecastViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewRouter.swift; sourceTree = "<group>"; };
 		AAC27D7C26D1482D007663F4 /* AppResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResource.swift; sourceTree = "<group>"; };
+		AAC27D8326D14E4F007663F4 /* InforWeatherTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforWeatherTableCell.swift; sourceTree = "<group>"; };
+		AAC27D8426D14E4F007663F4 /* InforWeatherTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforWeatherTableCell.xib; sourceTree = "<group>"; };
 		C14B9CF00BA377FD95B483E7 /* Pods-SentioWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather/Pods-SentioWeather.release.xcconfig"; sourceTree = "<group>"; };
 		C9273B31DE6CFF52A47824FB /* Pods-SentioWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeatherTests.debug.xcconfig"; path = "Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA336A0969AAEFFE481C5606 /* Pods-SentioWeather-SentioWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather-SentioWeatherUITests/Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -325,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC27D7E26D14D92007663F4 /* Cell */,
+				AAC27D7E26D14D92007663F4 /* TableCell */,
 				26DEB2A526D1048A004681F3 /* Mapper */,
 				26DEB2A426D10484004681F3 /* ViewModel */,
 				AAB9A06626D1046D006C10F9 /* Interactor */,
@@ -645,6 +650,13 @@
 				263048A826D17D1D00450B4E /* ForecastCell.xib */,
 			);
 			path = Cell;
+		AAC27D7E26D14D92007663F4 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				AAC27D8326D14E4F007663F4 /* InforWeatherTableCell.swift */,
+				AAC27D8426D14E4F007663F4 /* InforWeatherTableCell.xib */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -763,6 +775,7 @@
 				263048AA26D17D1D00450B4E /* ForecastCell.xib in Resources */,
 				26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */,
 				263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */,
+				AAC27D8626D14E4F007663F4 /* InforWeatherTableCell.xib in Resources */,
 				26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */,
 				26D5255626D0A932005D73E6 /* Main.storyboard in Resources */,
 				26DEB1BF26D0BA42004681F3 /* WeatherTabViewController.xib in Resources */,
@@ -919,6 +932,7 @@
 				2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */,
 				26DEB1CB26D0BC69004681F3 /* WeatherTabRouter.swift in Sources */,
 				26DEB28E26D10311004681F3 /* WeatherService.swift in Sources */,
+				AAC27D8526D14E4F007663F4 /* InforWeatherTableCell.swift in Sources */,
 				26DEB21C26D0C9A7004681F3 /* WeatherResource.swift in Sources */,
 				AA9A4AB226D2119F00C88E36 /* ErrorView.swift in Sources */,
 				26DEB1DC26D0BE87004681F3 /* TodayViewController.swift in Sources */,
