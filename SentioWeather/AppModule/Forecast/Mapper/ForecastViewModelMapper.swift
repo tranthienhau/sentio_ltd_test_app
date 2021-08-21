@@ -12,15 +12,14 @@ protocol ForecastViewModelMapping {
 }
 
 final class ForecastViewModelMapper: ForecastViewModelMapping {
-    
     private let formatter: DateTimeFormatting
     private let stringFormatter: StringFormatting
     init(formatter: DateTimeFormatting, stringFormatter: StringFormatting) {
         self.formatter = formatter
         self.stringFormatter = stringFormatter
     }
-    
-    func forecastViewModels(from response: WeatherForecastResponse) -> ForecastViewModel {
-        
+
+    func forecastViewModels(from _: WeatherForecastResponse) -> ForecastViewModel {
+        return ForecastViewModel(title: "", items: [])
     }
 }
