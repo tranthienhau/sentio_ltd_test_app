@@ -5,7 +5,7 @@
 //  Created by Duy Nguyen on 8/21/21.
 //
 
-import Foundation
+typealias WeatherForecastResponse = (weatherDatas: [WeatherDataResponse], location: LocationResponse)
 
 protocol WeatherServicing {
     func fetchWeatherData(
