@@ -26,7 +26,14 @@ final class TodayViewModelMapper: TodayViewModelMapping {
                 temperature: todayDatas.first?.main.temperature ?? 0,
                 metric: .celsius
             ),
-            locationName: response.location.name
+            locationName: response.location.name,
+            mainWeather: todayDatas.first?.weather.first?.main ?? "",
+            icon: self.stringFormatter.icon(name: todayDatas.first?.weather.first?.icon) ?? "",
+            pop: todayDatas.first?.pop ?? 0,
+            windSpeed: todayDatas.first?.wind.speed ?? 0,
+            sys: todayDatas.first?.sys.pod ?? "",
+            grndLevel: todayDatas.first?.main.groundLevel ?? 0,
+            rain: todayDatas.first?.rain?.threeH ?? 0.0
         )
     }
 

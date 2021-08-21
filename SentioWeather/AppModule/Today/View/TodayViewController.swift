@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol TodayView: AnyObject {
     func showError(title: String, message: String)
@@ -13,6 +14,18 @@ protocol TodayView: AnyObject {
 }
 
 class TodayViewController: UIViewController {
+
+    @IBOutlet weak var vTopBar: TopBarView!
+    @IBOutlet weak var ivWeather: UIImageView!
+    @IBOutlet weak var lbLocation: UILabel!
+    @IBOutlet weak var lbTemperature: UILabel!
+    @IBOutlet weak var lbWeather: UILabel!
+    @IBOutlet weak var vPop: ItemWheatherInforView!
+    @IBOutlet weak var vRain: ItemWheatherInforView!
+    @IBOutlet weak var vGrndLevel: ItemWheatherInforView!
+    @IBOutlet weak var vWindspeed: ItemWheatherInforView!
+    @IBOutlet weak var vSys: ItemWheatherInforView!
+
     var presenter: TodayPresenting?
 
     override func viewDidLoad() {
@@ -27,6 +40,7 @@ class TodayViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        vTopBar.setTitleWith(title: "Today", font: nil, color: nil)
         presenter?.onViewWillAppear()
     }
 }
@@ -36,7 +50,15 @@ extension TodayViewController: TodayView {
         // TODO:
     }
 
-    func showData(viewModel _: TodayViewModel) {
-        // TODO:
+    func showData(viewModel: TodayViewModel) {
+        ivWeather.sd_setImage(with: URL(string: viewModel.icon), completed: nil)
+        lbLocation.text = viewModel.locationName
+        lbTemperature.text = viewModel.temperature
+        lbWeather.text = viewModel.mainWeather
+        vPop.setDataWheather(image: AppImages.iconPop!, infor: "\(viewModel.pop * 100)%")
+        vRain.setDataWheather(image: AppImages.iconRain!, infor: "\(viewModel.rain) mm")
+        vGrndLevel.setDataWheather(image: AppImages.iconGrndLevel!, infor: "\(viewModel.grndLevel) hPa")
+        vWindspeed.setDataWheather(image: AppImages.iconWindspeed!, infor: "\(viewModel.windSpeed) km/h")
+        vSys.setDataWheather(image: AppImages.iconSys!, infor: viewModel.sys.uppercased())
     }
 }

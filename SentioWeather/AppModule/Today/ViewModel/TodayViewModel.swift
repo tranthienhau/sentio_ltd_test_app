@@ -10,5 +10,12 @@ import Foundation
 struct TodayViewModel {
     let temperature: String
     let locationName: String
+    let mainWeather: String
+    let icon: String
+    let pop: Double
+    let windSpeed: Double
+    let sys: String
+    let grndLevel: Int
+    let rain: Double
     // ....
 }

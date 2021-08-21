@@ -9,7 +9,7 @@ import UIKit
 
 class ItemWheatherInforView: UIView {
     @IBOutlet var contentView: UIView!
-    @IBOutlet var ivIconWheather: UIImageView!
+    @IBOutlet var ivIconWeather: UIImageView!
     @IBOutlet var lbInforWeather: UILabel!
 
     // MARK: - SetUp Custom View
@@ -36,7 +36,7 @@ class ItemWheatherInforView: UIView {
     }
 
     func setDataWheather(image: UIImage, infor: String) {
-        ivIconWheather.image = image
+        ivIconWeather.image = image
         lbInforWeather.text = infor
     }
 }

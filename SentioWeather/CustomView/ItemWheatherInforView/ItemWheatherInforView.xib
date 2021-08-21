@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemWheatherInforView" customModule="SentioWeather" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="FoO-xM-Jfi" id="JTK-tA-JRr"/>
-                <outlet property="ivIconWheather" destination="hTz-Mm-Ac0" id="nWx-6Y-NGK"/>
+                <outlet property="ivIconWeather" destination="hTz-Mm-Ac0" id="fnf-hu-Hrd"/>
                 <outlet property="lbInforWeather" destination="mwG-O5-Vda" id="QbM-2l-mZ7"/>
             </connections>
         </placeholder>
