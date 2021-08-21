@@ -13,9 +13,6 @@ protocol WeatherTabRouting {
 
 class WeatherTabRouter {
     weak var viewController: UIViewController?
-    init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
 }
 
 extension WeatherTabRouter: WeatherTabRouting {

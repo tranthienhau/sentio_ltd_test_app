@@ -8,22 +8,19 @@
 import UIKit
 
 class WeatherTabViewController: UITabBarController {
-    
     var presenter: WeatherTabPresenting?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAppreance()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.onViewDidLoad()
+        presenter?.onViewWillAppear()
     }
-    
+
     private func setupAppreance() {
         navigationController?.isNavigationBarHidden = true
     }
-
-
 }
