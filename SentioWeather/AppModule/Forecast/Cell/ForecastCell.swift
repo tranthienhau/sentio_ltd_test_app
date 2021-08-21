@@ -25,5 +25,6 @@ class ForecastCell: UITableViewCell {
         // Initialization code
     }
 
-    func update(viewModel _: ForecastCellViewModel) {}
+    func update(viewModel: ForecastCellViewModel) {
+    }
 }
