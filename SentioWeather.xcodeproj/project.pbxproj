@@ -23,8 +23,8 @@
 		26DEB1DC26D0BE87004681F3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1DA26D0BE87004681F3 /* TodayViewController.swift */; };
 		26DEB1DD26D0BE87004681F3 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB1DB26D0BE87004681F3 /* TodayViewController.xib */; };
 		26DEB1E526D0BEAD004681F3 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1E426D0BEAD004681F3 /* ForecastBuilder.swift */; };
-		26DEB1EC26D0BEC0004681F3 /* ForecaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1EA26D0BEC0004681F3 /* ForecaseViewController.swift */; };
-		26DEB1ED26D0BEC0004681F3 /* ForecaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB1EB26D0BEC0004681F3 /* ForecaseViewController.xib */; };
+		26DEB1EC26D0BEC0004681F3 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1EA26D0BEC0004681F3 /* ForecastViewController.swift */; };
+		26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB1EB26D0BEC0004681F3 /* ForecastViewController.xib */; };
 		26DEB1F626D0BF64004681F3 /* WeatherTabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1F526D0BF64004681F3 /* WeatherTabBuilder.swift */; };
 		26DEB20726D0C3C7004681F3 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB20626D0C3C7004681F3 /* DependencyContainer.swift */; };
 		26DEB20E26D0C63C004681F3 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB20D26D0C63C004681F3 /* WeatherRepository.swift */; };
@@ -93,8 +93,8 @@
 		26DEB1DA26D0BE87004681F3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		26DEB1DB26D0BE87004681F3 /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
 		26DEB1E426D0BEAD004681F3 /* ForecastBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
-		26DEB1EA26D0BEC0004681F3 /* ForecaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecaseViewController.swift; sourceTree = "<group>"; };
-		26DEB1EB26D0BEC0004681F3 /* ForecaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecaseViewController.xib; sourceTree = "<group>"; };
+		26DEB1EA26D0BEC0004681F3 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		26DEB1EB26D0BEC0004681F3 /* ForecastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastViewController.xib; sourceTree = "<group>"; };
 		26DEB1F526D0BF64004681F3 /* WeatherTabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTabBuilder.swift; sourceTree = "<group>"; };
 		26DEB20626D0C3C7004681F3 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		26DEB20D26D0C63C004681F3 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
@@ -334,8 +334,8 @@
 		26DEB1E926D0BEB4004681F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				26DEB1EA26D0BEC0004681F3 /* ForecaseViewController.swift */,
-				26DEB1EB26D0BEC0004681F3 /* ForecaseViewController.xib */,
+				26DEB1EA26D0BEC0004681F3 /* ForecastViewController.swift */,
+				26DEB1EB26D0BEC0004681F3 /* ForecastViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,7 +675,7 @@
 				26DEB1DD26D0BE87004681F3 /* TodayViewController.xib in Resources */,
 				26D5255B26D0A935005D73E6 /* LaunchScreen.storyboard in Resources */,
 				AAB9A06326D1016A006C10F9 /* TopBarView.xib in Resources */,
-				26DEB1ED26D0BEC0004681F3 /* ForecaseViewController.xib in Resources */,
+				26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */,
 				26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */,
 				26D5255626D0A932005D73E6 /* Main.storyboard in Resources */,
 				AAB9A05E26D0FCE1006C10F9 /* ItemWheatherInforView.xib in Resources */,
@@ -839,7 +839,7 @@
 				26DEB1D526D0BE3B004681F3 /* TodayBuilder.swift in Sources */,
 				26DEB22126D0CA29004681F3 /* BaseTargetType.swift in Sources */,
 				26DEB24A26D0F11F004681F3 /* TodayViewModelMapping.swift in Sources */,
-				26DEB1EC26D0BEC0004681F3 /* ForecaseViewController.swift in Sources */,
+				26DEB1EC26D0BEC0004681F3 /* ForecastViewController.swift in Sources */,
 				26DEB2D926D10A4D004681F3 /* ForecastPresenter.swift in Sources */,
 				26DEB22726D0CBE7004681F3 /* FetchWeatherRequest.swift in Sources */,
 				26DEB20726D0C3C7004681F3 /* DependencyContainer.swift in Sources */,

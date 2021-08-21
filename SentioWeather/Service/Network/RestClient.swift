@@ -23,7 +23,7 @@ class RestClientImpl: RestClient {
         let provider = MoyaProvider<T>(plugins: [
             NetworkLoggerPlugin(
                 configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)
-            )
+            ),
         ])
         provider.request(target) { result in
             switch result {
