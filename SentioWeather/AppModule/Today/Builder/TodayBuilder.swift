@@ -2,14 +2,14 @@
 //  TodayBuilder.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import UIKit
 
 final class TodayBuilder {
     static func build() -> UIViewController {
-        let view = TodayViewController()
+        let view = TodayViewController(nibName: "TodayViewController", bundle: nil)
         let item = UITabBarItem()
         item.title = "Today"
         item.image = UIImage(named: "home_icon") // TODO: icon
