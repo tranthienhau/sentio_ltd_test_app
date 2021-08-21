@@ -7,14 +7,8 @@
 
 import Foundation
 
-protocol ForecastViewRouterProtocol {
-    
-}
+protocol ForecastViewRouterProtocol {}
 
-class ForecastViewRouter {
-    
-}
+class ForecastViewRouter {}
 
-extension ForecastViewRouter : ForecastViewRouterProtocol {
-    
-}
+extension ForecastViewRouter: ForecastViewRouterProtocol {}

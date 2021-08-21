@@ -13,12 +13,8 @@ protocol TodayView: AnyObject {
 }
 
 class TodayViewController: UIViewController {
-    var presenter: TodayPresenter?
+    var presenter: TodayPresenting?
 
-class TodayViewController: UIViewController {
-    
-    var presenter : TodayViewPresenterProtocol?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,15 +32,12 @@ class TodayViewController: UIViewController {
 }
 
 extension TodayViewController: TodayView {
-    func showError(title _: String, message _: String) {
+    func showError(title: String, message: String) {
         // TODO:
     }
 
-    func showData(viewModel _: TodayViewModel) {
+    func showData(viewModel: TodayViewModel) {
         // TODO:
+        
     }
-}
-
-extension TodayViewController : TodayViewControllerProtocol {
-    
 }
