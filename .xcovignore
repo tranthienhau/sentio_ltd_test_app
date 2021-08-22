@@ -10,6 +10,8 @@
 # Exclue project specific folders
 - SentioWeather/Service/Dependency
 - SentioWeather/Helper
+- SentioWeather/Model
+- SentioWeather/Service/Network
 
 # Exclude all dependencies
 - Pods
