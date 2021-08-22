@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		05E063B96F442782A92954E8 /* Pods_SentioWeather_SentioWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AECAB546BB8607E84D463A1 /* Pods_SentioWeather_SentioWeatherUITests.framework */; };
 		263048B426D1F83800450B4E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048B326D1F83800450B4E /* LocationService.swift */; };
+		263048E126D2392200450B4E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048E026D2392200450B4E /* DatabaseService.swift */; };
+		263048E626D2393E00450B4E /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048E526D2393E00450B4E /* FirestoreService.swift */; };
+		263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263048EA26D23A6D00450B4E /* GoogleService-Info.plist */; };
+		263048FA26D23C1F00450B4E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048F926D23C1F00450B4E /* Encodable+Extension.swift */; };
+		2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630490126D244D900450B4E /* WeatherDatabaseService.swift */; };
 		26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5254E26D0A932005D73E6 /* AppDelegate.swift */; };
 		26D5255326D0A932005D73E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5255226D0A932005D73E6 /* ViewController.swift */; };
 		26D5255626D0A932005D73E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255426D0A932005D73E6 /* Main.storyboard */; };
@@ -74,6 +79,11 @@
 /* Begin PBXFileReference section */
 		0AECAB546BB8607E84D463A1 /* Pods_SentioWeather_SentioWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentioWeather_SentioWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		263048B326D1F83800450B4E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		263048E026D2392200450B4E /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		263048E526D2393E00450B4E /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		263048EA26D23A6D00450B4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		263048F926D23C1F00450B4E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		2630490126D244D900450B4E /* WeatherDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDatabaseService.swift; sourceTree = "<group>"; };
 		26D5254B26D0A932005D73E6 /* SentioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5254E26D0A932005D73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D5255226D0A932005D73E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +194,24 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		263048DF26D2390C00450B4E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				263048E026D2392200450B4E /* DatabaseService.swift */,
+				263048E526D2393E00450B4E /* FirestoreService.swift */,
+				2630490126D244D900450B4E /* WeatherDatabaseService.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		263048F826D23C0F00450B4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				263048F926D23C1F00450B4E /* Encodable+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		26D5254226D0A932005D73E6 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +238,7 @@
 		26D5254D26D0A932005D73E6 /* SentioWeather */ = {
 			isa = PBXGroup;
 			children = (
+				263048F826D23C0F00450B4E /* Extensions */,
 				AAB9A05926D0FC40006C10F9 /* CustomView */,
 				26DEB20426D0C346004681F3 /* Model */,
 				26DEB20326D0C342004681F3 /* Service */,
@@ -220,6 +249,7 @@
 				26D5255726D0A935005D73E6 /* Assets.xcassets */,
 				26D5255926D0A935005D73E6 /* LaunchScreen.storyboard */,
 				26D5255C26D0A935005D73E6 /* Info.plist */,
+				263048EA26D23A6D00450B4E /* GoogleService-Info.plist */,
 			);
 			path = SentioWeather;
 			sourceTree = "<group>";
@@ -362,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				263048B226D1F82900450B4E /* Location */,
+				263048DF26D2390C00450B4E /* Database */,
 				26DEB28C26D10306004681F3 /* Weather */,
 				26DEB26426D0FE9A004681F3 /* StringFomatter */,
 				26DEB24E26D0F360004681F3 /* DateTime */,
@@ -687,6 +718,7 @@
 				26D5255B26D0A935005D73E6 /* LaunchScreen.storyboard in Resources */,
 				AAB9A06326D1016A006C10F9 /* TopBarView.xib in Resources */,
 				26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */,
+				263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */,
 				26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */,
 				26D5255626D0A932005D73E6 /* Main.storyboard in Resources */,
 				AAB9A05E26D0FCE1006C10F9 /* ItemWheatherInforView.xib in Resources */,
@@ -838,7 +870,9 @@
 				AAB9A06A26D10505006C10F9 /* ForecastViewRouter.swift in Sources */,
 				26DEB1F626D0BF64004681F3 /* WeatherTabBuilder.swift in Sources */,
 				26DEB25026D0F36A004681F3 /* DateTimeFormatter.swift in Sources */,
+				263048FA26D23C1F00450B4E /* Encodable+Extension.swift in Sources */,
 				26DEB2A726D10497004681F3 /* ForecastViewModelMapper.swift in Sources */,
+				2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */,
 				26DEB1CB26D0BC69004681F3 /* WeatherTabRouter.swift in Sources */,
 				26DEB28E26D10311004681F3 /* WeatherService.swift in Sources */,
 				26DEB21C26D0C9A7004681F3 /* WeatherResource.swift in Sources */,
@@ -856,11 +890,13 @@
 				26DEB20726D0C3C7004681F3 /* DependencyContainer.swift in Sources */,
 				26DEB20E26D0C63C004681F3 /* WeatherRepository.swift in Sources */,
 				26DEB26626D0FEB2004681F3 /* StringFormatting.swift in Sources */,
+				263048E126D2392200450B4E /* DatabaseService.swift in Sources */,
 				26DEB2AF26D104A6004681F3 /* ForecastViewModel.swift in Sources */,
 				26DEB24426D0EFFD004681F3 /* TodayViewModel.swift in Sources */,
 				26DEB21426D0C67B004681F3 /* RestClient.swift in Sources */,
 				26D5255326D0A932005D73E6 /* ViewController.swift in Sources */,
 				26DEB1BE26D0BA42004681F3 /* WeatherTabViewController.swift in Sources */,
+				263048E626D2393E00450B4E /* FirestoreService.swift in Sources */,
 				26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */,
 				AAB9A06126D1015D006C10F9 /* TopBarView.swift in Sources */,
 				263048B426D1F83800450B4E /* LocationService.swift in Sources */,

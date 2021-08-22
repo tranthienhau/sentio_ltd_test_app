@@ -6,6 +6,8 @@
 //
 
 struct WeatherResponse: Codable {
+    let deviceId: String?
+    let timestamp: Int?
     let status: String
     let message: Int
     let count: Int
@@ -17,7 +19,8 @@ struct WeatherResponse: Codable {
         case message
         case count = "cnt"
         case datas = "list"
-        case city
+        case city, timestamp
+        case deviceId = "device_id"
     }
 }
 
