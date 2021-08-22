@@ -7,7 +7,6 @@
 
 import SDWebImage
 import UIKit
-import SDWebImage
 
 protocol TodayView: AnyObject {
     func showError(title: String, message: String)
@@ -36,11 +35,11 @@ class TodayViewController: UIViewController {
 
     private func setupAppreance() {
         navigationController?.isNavigationBarHidden = true
+        vTopBar.setTitleWith(title: "Today", font: nil, color: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        vTopBar.setTitleWith(title: "Today", font: nil, color: nil)
         presenter?.onViewWillAppear()
     }
 }

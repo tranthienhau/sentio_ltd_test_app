@@ -2,7 +2,7 @@
 //  Encodable+Extension.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/22/21.
+//  Created by Hau Tran on 8/22/21.
 //
 
 import Foundation

@@ -2,18 +2,11 @@
 //  ForecastCell.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 21/08/2021.
+//  Created by Hau Tran on 21/08/2021.
 //
 
 import SDWebImage
 import UIKit
-
-struct ForecastCellViewModel {
-    let temperature: String
-    let description: String
-    let iconUrl: String
-    let time: String
-}
 
 class ForecastCell: UITableViewCell {
     @IBOutlet var ivWeather: UIImageView!
@@ -26,10 +19,10 @@ class ForecastCell: UITableViewCell {
         // Initialization code
     }
 
-    func update(viewModel data: ForecastCellViewModel) {
-        ivWeather.sd_setImage(with: URL(string: data.iconUrl), completed: nil)
-        lbTime.text = data.time
-        lbTemperature.text = data.temperature
-        lbWeather.text = data.description
+    func update(viewModel: ForecastItemViewModel) {
+        ivWeather.sd_setImage(with: URL(string: viewModel.iconUrl ?? ""), completed: nil)
+        lbTime.text = viewModel.time
+        lbTemperature.text = viewModel.temperature
+        lbWeather.text = viewModel.description
     }
 }

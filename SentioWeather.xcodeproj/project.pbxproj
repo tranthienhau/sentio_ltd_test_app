@@ -18,6 +18,7 @@
 		263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263048EA26D23A6D00450B4E /* GoogleService-Info.plist */; };
 		263048FA26D23C1F00450B4E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048F926D23C1F00450B4E /* Encodable+Extension.swift */; };
 		2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630490126D244D900450B4E /* WeatherDatabaseService.swift */; };
+		2630492A26D24F4C00450B4E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630492926D24F4C00450B4E /* Double+Extension.swift */; };
 		26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5254E26D0A932005D73E6 /* AppDelegate.swift */; };
 		26D5255326D0A932005D73E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5255226D0A932005D73E6 /* ViewController.swift */; };
 		26D5255626D0A932005D73E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255426D0A932005D73E6 /* Main.storyboard */; };
@@ -56,7 +57,6 @@
 		26DEB2D926D10A4D004681F3 /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB2D826D10A4D004681F3 /* ForecastPresenter.swift */; };
 		AA811FCF26D2228F0099399D /* ForecastHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA811FCE26D2228F0099399D /* ForecastHeader.swift */; };
 		AA811FD126D2229B0099399D /* ForecastHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA811FD026D2229B0099399D /* ForecastHeader.xib */; };
-		AA811FD326D22F490099399D /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA811FD226D22F490099399D /* Double+Extension.swift */; };
 		AA9A4AB226D2119F00C88E36 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A4AB026D2119F00C88E36 /* ErrorView.swift */; };
 		AA9A4AB326D2119F00C88E36 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9A4AB126D2119F00C88E36 /* ErrorView.xib */; };
 		AA9A4AB626D21A8E00C88E36 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */; };
@@ -97,6 +97,7 @@
 		263048EA26D23A6D00450B4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		263048F926D23C1F00450B4E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		2630490126D244D900450B4E /* WeatherDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDatabaseService.swift; sourceTree = "<group>"; };
+		2630492926D24F4C00450B4E /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		26D5254B26D0A932005D73E6 /* SentioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5254E26D0A932005D73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D5255226D0A932005D73E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +226,7 @@
 		263048F826D23C0F00450B4E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2630492926D24F4C00450B4E /* Double+Extension.swift */,
 				263048F926D23C1F00450B4E /* Encodable+Extension.swift */,
 				AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */,
 			);
@@ -332,7 +334,6 @@
 			children = (
 				AA811FCD26D222510099399D /* Header */,
 				AAC27D7E26D14D92007663F4 /* Cell */,
-				AAC27D7E26D14D92007663F4 /* TableCell */,
 				26DEB2A526D1048A004681F3 /* Mapper */,
 				26DEB2A426D10484004681F3 /* ViewModel */,
 				AAB9A06626D1046D006C10F9 /* Interactor */,
@@ -540,6 +541,7 @@
 				26DEB23726D0EC3C004681F3 /* TodayInteractor.swift */,
 				26DEB23126D0EBE0004681F3 /* TodayPresenter.swift */,
 				26DEB29C26D10480004681F3 /* ForecastInteractor.swift */,
+				AA811FD226D22F490099399D /* Double+Extension.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -570,15 +572,6 @@
 				AA9A4AB126D2119F00C88E36 /* ErrorView.xib */,
 			);
 			path = ErrorView;
-			sourceTree = "<group>";
-		};
-		AA9A4AB426D21A6D00C88E36 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */,
-				AA811FD226D22F490099399D /* Double+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		AAB9A05026D0EB80006C10F9 /* Router */ = {
@@ -665,15 +658,6 @@
 			sourceTree = "<group>";
 		};
 		AAC27D7E26D14D92007663F4 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				263048A926D17D1D00450B4E /* ForecastCell.swift */,
-				263048A826D17D1D00450B4E /* ForecastCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		AAC27D7E26D14D92007663F4 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
 				263048A926D17D1D00450B4E /* ForecastCell.swift */,
@@ -798,7 +782,6 @@
 				263048AA26D17D1D00450B4E /* ForecastCell.xib in Resources */,
 				26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */,
 				263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */,
-				AAC27D8626D14E4F007663F4 /* InforWeatherTableCell.xib in Resources */,
 				26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */,
 				AA811FD126D2229B0099399D /* ForecastHeader.xib in Resources */,
 				26D5255626D0A932005D73E6 /* Main.storyboard in Resources */,
@@ -967,7 +950,6 @@
 				26DEB22126D0CA29004681F3 /* BaseTargetType.swift in Sources */,
 				26DEB24A26D0F11F004681F3 /* TodayViewModelMapping.swift in Sources */,
 				26DEB1EC26D0BEC0004681F3 /* ForecastViewController.swift in Sources */,
-				AA811FD326D22F490099399D /* Double+Extension.swift in Sources */,
 				26DEB2D926D10A4D004681F3 /* ForecastPresenter.swift in Sources */,
 				263048AB26D17D1D00450B4E /* ForecastCell.swift in Sources */,
 				26DEB22726D0CBE7004681F3 /* FetchWeatherRequest.swift in Sources */,
@@ -985,6 +967,7 @@
 				263048E626D2393E00450B4E /* FirestoreService.swift in Sources */,
 				26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */,
 				AAB9A06126D1015D006C10F9 /* TopBarView.swift in Sources */,
+				2630492A26D24F4C00450B4E /* Double+Extension.swift in Sources */,
 				263048B426D1F83800450B4E /* LocationService.swift in Sources */,
 				26DEB2D426D10A47004681F3 /* ForecastInteractor.swift in Sources */,
 				26DEB1E526D0BEAD004681F3 /* ForecastBuilder.swift in Sources */,

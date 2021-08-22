@@ -2,7 +2,7 @@
 //  ForecastPresenter.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Foundation
@@ -28,7 +28,7 @@ class ForecastPresenter: ForecastPresenting {
             case let .success(response):
                 self.handleResponse(response)
             case let .failure(error):
-                self.view?.showError(title: "Forecast", message: error.localizedDescription)
+                self.view?.showError(title: "Oops!", message: error.localizedDescription)
             }
         }
     }

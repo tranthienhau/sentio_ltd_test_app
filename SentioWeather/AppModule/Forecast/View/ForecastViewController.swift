@@ -15,7 +15,7 @@ protocol ForecastView {
 class ForecastViewController: UIViewController {
 
     @IBOutlet weak var vTopbar: TopBarView!
-    @IBOutlet weak var tblInforWeather: UITableView!
+    @IBOutlet weak var tableView: UITableView!
 
     var presenter: ForecastPresenting?
     private var viewModels: [ForecastViewModel] = []
@@ -24,7 +24,6 @@ class ForecastViewController: UIViewController {
         super.viewDidLoad()
 
         setupAppreance()
-        setupUI()
         setupTableView()
     }
 
@@ -35,28 +34,30 @@ class ForecastViewController: UIViewController {
 
     private func setupAppreance() {
         navigationController?.isNavigationBarHidden = true
-    }
-
-    private func setupUI() {
         vTopbar.setTitleWith(title: "Forecast", font: nil, color: nil)
     }
 
     private func setupTableView() {
-        // tableView.reloadData()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 60
+        tableView.register(UINib(nibName: "ForecastCell", bundle: nil), forCellReuseIdentifier: "ForecastCell")
     }
 }
 
 extension ForecastViewController: ForecastView {
     func showError(title: String, message: String) {
-        self.showErrorView(title: title, error: message)
+        self.showErrorView(title: title, message: message)
     }
-    func showData(viewModels data: [ForecastViewModel]) {
-        viewModels = data
-        tblInforWeather.reloadData()
+
+    func showData(viewModels: [ForecastViewModel]) {
+        self.viewModels = viewModels
+        tableView.reloadData()
     }
 }
 
-extension ForecastViewController: UITableViewDataSource {
+extension ForecastViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in _: UITableView) -> Int {
         return viewModels.count
     }
@@ -66,23 +67,20 @@ extension ForecastViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : ForecastCell = tableView.dequeueReusableCell(
-            withIdentifier: "ForecastCell",
-            for: indexPath) as? ForecastCell ?? ForecastCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell", for: indexPath)
         let item = viewModels[indexPath.section].items[indexPath.row]
-        cell.update(viewModel:
-                        ForecastCellViewModel(
-                            temperature: item.temperature,
-                            description: item.description,
-                            iconUrl: item.iconUrl ?? "",
-                            time: item.time))
+        (cell as? ForecastCell)?.update(viewModel: item)
         return cell
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewModel = viewModels[section]
-        let headerView = ForecastHeader.init(frame: CGRect.zero)
-        headerView.update(day: viewModel.header.title)
+        let headerView = ForecastHeader(frame: .zero)
+        headerView.update(viewModel: viewModel.header)
         return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
 }

@@ -2,7 +2,7 @@
 //  ForecastHeader.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 22/08/2021.
+//  Created by Hau Tran on 22/08/2021.
 //
 
 import UIKit
@@ -36,7 +36,7 @@ class ForecastHeader: UIView {
         lbDay.text = dateString
     }
 
-    func update(day: String) {
-        lbDay.text = day
+    func update(viewModel: ForecastHeaderViewModel) {
+        lbDay.text = viewModel.title
     }
 }
