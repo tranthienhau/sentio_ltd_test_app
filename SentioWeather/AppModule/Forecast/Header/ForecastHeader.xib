@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastHeader" customModule="SentioWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="6ad-bG-Tx8" id="kVM-wK-JJC"/>
+                <outlet property="lbDay" destination="ely-26-SZY" id="uNH-y8-cjS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6ad-bG-Tx8">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ely-26-SZY">
+                    <rect key="frame" x="10" y="11" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wk-sC-jm9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="QGT-te-yhf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p18-Yx-asT">
+                    <rect key="frame" x="0.0" y="39.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="cHk-tb-bBJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7Mk-TX-aiP"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Wk-sC-jm9" firstAttribute="top" secondItem="7Mk-TX-aiP" secondAttribute="top" id="1MR-EH-q0G"/>
+                <constraint firstItem="7Mk-TX-aiP" firstAttribute="trailing" secondItem="p18-Yx-asT" secondAttribute="trailing" id="ByC-TP-fyJ"/>
+                <constraint firstItem="ely-26-SZY" firstAttribute="centerY" secondItem="7Mk-TX-aiP" secondAttribute="centerY" id="Ifu-7f-YBl"/>
+                <constraint firstItem="4Wk-sC-jm9" firstAttribute="leading" secondItem="6ad-bG-Tx8" secondAttribute="leading" id="Ijh-gr-WV7"/>
+                <constraint firstItem="ely-26-SZY" firstAttribute="leading" secondItem="7Mk-TX-aiP" secondAttribute="leading" constant="10" id="KqZ-VC-Nt2"/>
+                <constraint firstAttribute="bottom" secondItem="p18-Yx-asT" secondAttribute="bottom" id="O9g-0Z-KZz"/>
+                <constraint firstItem="p18-Yx-asT" firstAttribute="leading" secondItem="7Mk-TX-aiP" secondAttribute="leading" id="QHA-SN-Xg3"/>
+                <constraint firstAttribute="trailing" secondItem="4Wk-sC-jm9" secondAttribute="trailing" id="bQv-jj-LXN"/>
+                <constraint firstItem="7Mk-TX-aiP" firstAttribute="trailing" secondItem="ely-26-SZY" secondAttribute="trailing" constant="10" id="f69-el-18q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

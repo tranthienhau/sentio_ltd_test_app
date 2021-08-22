@@ -1,19 +1,19 @@
 //
-//  WeatherInfoItemView.swift
+//  ForecastHeader.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 21/08/2021.
+//  Created by DatNguyen on 22/08/2021.
 //
 
 import UIKit
 
-class WeatherInfoItemView: UIView {
+class ForecastHeader: UIView {
     @IBOutlet var contentView: UIView!
-    @IBOutlet var ivIconWeather: UIImageView!
-    @IBOutlet var lbInforWeather: UILabel!
+    @IBOutlet weak var lbDay: UILabel!
+
+    private var dateString: String?
 
     // MARK: - SetUp Custom View
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()
@@ -25,7 +25,7 @@ class WeatherInfoItemView: UIView {
     }
 
     func setUpView() {
-        Bundle.main.loadNibNamed("WeatherInfoItemView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("ForecastHeader", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -33,10 +33,10 @@ class WeatherInfoItemView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        lbDay.text = dateString
     }
 
-    func setData(image: UIImage, infor: String) {
-        ivIconWeather.image = image
-        lbInforWeather.text = infor == "" ? "..." : infor
+    func update(day: String) {
+        lbDay.text = day
     }
 }

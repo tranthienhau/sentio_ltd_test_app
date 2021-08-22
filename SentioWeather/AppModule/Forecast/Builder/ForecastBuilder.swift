@@ -14,7 +14,8 @@ final class ForecaseBuilder {
         let view = ForecastViewController()
         let item = UITabBarItem()
         item.title = "Forecast"
-        item.image = UIImage(named: "home_icon") // TODO: icon
+        item.image = AppImages.iconSnowStorm
+        item.selectedImage = AppImages.iconSnowStormSelected
         view.tabBarItem = item
 
         let service: WeatherServicing = DependencyContainer.sharedInstance.getService()

@@ -28,8 +28,7 @@ class ForecastPresenter: ForecastPresenting {
             case let .success(response):
                 self.handleResponse(response)
             case let .failure(error):
-                // TODO: add title
-                self.view?.showError(title: "TODO", message: error.localizedDescription)
+                self.view?.showError(title: "Forecast", message: error.localizedDescription)
             }
         }
     }
