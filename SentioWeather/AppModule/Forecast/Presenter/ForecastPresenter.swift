@@ -2,7 +2,7 @@
 //  ForecastPresenter.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Foundation
@@ -22,14 +22,13 @@ class ForecastPresenter: ForecastPresenting {
     }
 
     func onViewWillAppear() {
-        interactor.fetchWeatherData(latitude: 1.3116719, longitude: 103.8336574) { [weak self] result in
+        interactor.weatherData { [weak self] result in
             guard let self = self else { return }
             switch result {
             case let .success(response):
                 self.handleResponse(response)
             case let .failure(error):
-                // TODO: add title
-                self.view?.showError(title: "TODO", message: error.localizedDescription)
+                self.view?.showError(title: "Oops!", message: error.localizedDescription)
             }
         }
     }

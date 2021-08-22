@@ -2,7 +2,7 @@
 //  TopBarView.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 21/08/2021.
+//  Created by Hau Tran on 21/08/2021.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ class TopBarView: UIView {
     @IBOutlet var lbTitle: UILabel!
 
     // MARK: - SetUp Custom View
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()

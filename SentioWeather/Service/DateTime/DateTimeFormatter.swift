@@ -2,7 +2,7 @@
 //  DateTimeFormatter.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Foundation
@@ -22,7 +22,9 @@ final class DateTimeFormatter: DateTimeFormatting {
     }
 
     func isSameDate(lhs: Date, rhs: Date) -> Bool {
-        return Calendar.current.compare(lhs, to: rhs, toGranularity: .day) == .orderedSame
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = .current
+        return calendar.compare(lhs, to: rhs, toGranularity: .day) == .orderedSame
     }
 
     func time(from timestamp: Double) -> String {

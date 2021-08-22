@@ -34,12 +34,14 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>SentioWeather app wants to know your location, to provide best accuracy weather forcast</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>SentioWeather app wants to know your location, to provide best accuracy weather forcast</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

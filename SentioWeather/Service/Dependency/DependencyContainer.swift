@@ -2,13 +2,13 @@
 //  DependencyContainer.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Swinject
 
 class DependencyContainer {
-    public static let sharedInstance = DependencyContainer()
+    static let sharedInstance = DependencyContainer()
     private let container = Container()
 
     func registerDefaultServices() {
@@ -24,8 +24,20 @@ class DependencyContainer {
         register(service: StringFormatting.self) { _ in
             StringFormatter()
         }
+        register(service: DatabaseServicing.self) { _ in
+            FirestoreService()
+        }
+        register(service: WeatherDatabaseServicing.self) { resolver in
+            WeatherDatabaseService(databaseService: resolver.resolve(DatabaseServicing.self)!)
+        }
         register(service: WeatherServicing.self) { resolver in
-            WeatherService(repository: resolver.resolve(WeatherRepositoring.self)!)
+            WeatherService(
+                repository: resolver.resolve(WeatherRepositoring.self)!,
+                database: resolver.resolve(WeatherDatabaseServicing.self)!
+            )
+        }
+        register(service: LocationServicing.self) { _ in
+            LocationService()
         }
     }
 
