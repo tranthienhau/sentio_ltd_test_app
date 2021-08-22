@@ -2,7 +2,7 @@
 //  WeatherServicing.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 typealias WeatherForecastResponse = (weatherDatas: [WeatherDataResponse], location: LocationResponse)

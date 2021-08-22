@@ -2,7 +2,7 @@
 //  ErrorView.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 22/08/2021.
+//  Created by Hau Tran on 22/08/2021.
 //
 
 import UIKit

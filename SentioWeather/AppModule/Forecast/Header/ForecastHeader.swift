@@ -1,15 +1,17 @@
 //
-//  TopBarView.swift
+//  ForecastHeader.swift
 //  SentioWeather
 //
-//  Created by Hau Tran on 21/08/2021.
+//  Created by Hau Tran on 22/08/2021.
 //
 
 import UIKit
 
-class TopBarView: UIView {
+class ForecastHeader: UIView {
     @IBOutlet var contentView: UIView!
-    @IBOutlet var lbTitle: UILabel!
+    @IBOutlet weak var lbDay: UILabel!
+
+    private var dateString: String?
 
     // MARK: - SetUp Custom View
     override init(frame: CGRect) {
@@ -23,7 +25,7 @@ class TopBarView: UIView {
     }
 
     func setUpView() {
-        Bundle.main.loadNibNamed("TopBarView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("ForecastHeader", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -31,11 +33,10 @@ class TopBarView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        lbDay.text = dateString
     }
 
-    func setTitleWith(title: String, font: UIFont?, color: UIColor?) {
-        lbTitle.text = title
-        lbTitle.font = font ?? UIFont.systemFont(ofSize: 16, weight: .bold)
-        lbTitle.textColor = color ?? UIColor.black
+    func update(viewModel: ForecastHeaderViewModel) {
+        lbDay.text = viewModel.title
     }
 }

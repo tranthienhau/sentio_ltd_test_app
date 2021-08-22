@@ -12,7 +12,8 @@ final class TodayBuilder {
         let view = TodayViewController(nibName: "TodayViewController", bundle: nil)
         let item = UITabBarItem()
         item.title = "Today"
-        item.image = UIImage(named: "home_icon") // TODO: icon
+        item.image = AppImages.iconSun
+        item.selectedImage = AppImages.iconSunSelected
         view.tabBarItem = item
 
         let service: WeatherServicing = DependencyContainer.sharedInstance.getService()

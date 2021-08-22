@@ -2,7 +2,7 @@
 //  WeatherInfoItemView.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 21/08/2021.
+//  Created by Hau Tran on 21/08/2021.
 //
 
 import UIKit
@@ -37,6 +37,6 @@ class WeatherInfoItemView: UIView {
 
     func setData(image: UIImage, infor: String) {
         ivIconWeather.image = image
-        lbInforWeather.text = infor
+        lbInforWeather.text = infor == "" ? "..." : infor
     }
 }

@@ -2,7 +2,7 @@
 //  TodayPresenter.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 protocol TodayPresenting {
@@ -29,7 +29,7 @@ extension TodayPresenter: TodayPresenting {
             case let .success(response):
                 self.handleResponse(response)
             case let .failure(error):
-                self.view?.showError(title: "Today", message: error.localizedDescription)
+                self.view?.showError(title: "Oops!", message: error.localizedDescription)
             }
         }
     }
