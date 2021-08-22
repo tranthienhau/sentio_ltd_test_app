@@ -2,18 +2,18 @@
 //  ForecastPresenterTests.swift
 //  SentioWeatherTests
 //
-//  Created by Duy Nguyen on 8/22/21.
+//  Created by Hau Tran on 8/22/21.
 //
 
-import XCTest
 @testable import SentioWeather
+import XCTest
 
 class ForecastPresenterTests: XCTestCase {
     var interactor: ForecastInteractorMock!
     var view: ForecastViewMock!
     var mapper: ForecastViewModelMapperMock!
     var presenter: ForecastPresenter!
-    
+
     override func setUp() {
         super.setUp()
         interactor = ForecastInteractorMock()
@@ -29,27 +29,27 @@ class ForecastPresenterTests: XCTestCase {
         mapper = nil
         presenter = nil
     }
-    
+
     func testOnViewWillAppearWhenFailed() {
         // arrange
         interactor.result = .failure(MockError.sampleError)
-        
+
         // act
         presenter.onViewWillAppear()
-        
+
         // assert
         XCTAssertTrue(interactor.invocations.contains { $0 == .weatherData })
         XCTAssertFalse(mapper.invocations.contains { $0 == .forecastViewModels })
         XCTAssertTrue(view.invocations.contains { $0 == .showError })
     }
-    
+
     func testOnViewWillAppearWhenSucceed() {
         // arrange
         interactor.result = .success(weatherForecastResponse)
-        
+
         // act
         presenter.onViewWillAppear()
-        
+
         // assert
         XCTAssertTrue(interactor.invocations.contains { $0 == .weatherData })
         XCTAssertTrue(mapper.invocations.contains { $0 == .forecastViewModels })

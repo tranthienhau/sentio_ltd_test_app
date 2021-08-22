@@ -2,7 +2,7 @@
 //  TodayViewMock.swift
 //  SentioWeatherTests
 //
-//  Created by Duy Nguyen on 8/22/21.
+//  Created by Hau Tran on 8/22/21.
 //
 
 import Foundation
@@ -13,14 +13,14 @@ final class TodayViewMock: TodayView {
         case showError
         case showData
     }
-    
+
     var invocations: [Invocation] = []
-    
-    func showError(title: String, message: String) {
+
+    func showError(title _: String, message _: String) {
         invocations.append(.showError)
     }
-    
-    func showData(viewModel: TodayViewModel) {
+
+    func showData(viewModel _: TodayViewModel) {
         invocations.append(.showData)
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,6 +15,7 @@
                 <outlet property="lbLocation" destination="Ssg-Wc-mzm" id="RJZ-9F-K0L"/>
                 <outlet property="lbTemperature" destination="291-eg-xWT" id="Lnr-xO-tch"/>
                 <outlet property="lbWeather" destination="4zc-j5-g3f" id="9HM-2Y-rWh"/>
+                <outlet property="stackMain" destination="886-sR-BIk" id="C1l-NE-riv"/>
                 <outlet property="vGrndLevel" destination="p2V-sb-cW0" id="oEO-l0-sd3"/>
                 <outlet property="vPop" destination="5ZA-Ek-Fc4" id="HeA-Wp-DhN"/>
                 <outlet property="vRain" destination="oJm-w8-x93" id="Dbn-zd-bZE"/>
@@ -261,6 +262,9 @@
                                             <state key="normal" title="Share">
                                                 <color key="titleColor" systemColor="systemIndigoColor"/>
                                             </state>
+                                            <connections>
+                                                <action selector="btnShare_Action:" destination="-1" eventType="touchUpInside" id="lnm-D3-RHe"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemGreenColor"/>

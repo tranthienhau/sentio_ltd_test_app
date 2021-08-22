@@ -12,6 +12,7 @@ class TopBarView: UIView {
     @IBOutlet var lbTitle: UILabel!
 
     // MARK: - SetUp Custom View
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()

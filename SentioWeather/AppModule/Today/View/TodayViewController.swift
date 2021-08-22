@@ -15,6 +15,7 @@ protocol TodayView: AnyObject {
 
 class TodayViewController: UIViewController {
     @IBOutlet var vTopBar: TopBarView!
+    @IBOutlet var stackMain: UIStackView!
     @IBOutlet var ivWeather: UIImageView!
     @IBOutlet var lbLocation: UILabel!
     @IBOutlet var lbTemperature: UILabel!
@@ -41,6 +42,15 @@ class TodayViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.onViewWillAppear()
+    }
+
+    // MARK: - Button Action
+
+    @IBAction func btnShare_Action(_ sender: UIButton) {
+        sender.isHidden = true
+        let imageScreenshot = UIImage(view: stackMain)
+        presenter?.onShare(param: imageScreenshot)
+        sender.isHidden = false
     }
 }
 

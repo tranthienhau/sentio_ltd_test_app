@@ -13,9 +13,8 @@ protocol ForecastView {
 }
 
 class ForecastViewController: UIViewController {
-
-    @IBOutlet weak var vTopbar: TopBarView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var vTopbar: TopBarView!
+    @IBOutlet var tableView: UITableView!
 
     var presenter: ForecastPresenting?
     private var viewModels: [ForecastViewModel] = []
@@ -48,7 +47,7 @@ class ForecastViewController: UIViewController {
 
 extension ForecastViewController: ForecastView {
     func showError(title: String, message: String) {
-        self.showErrorView(title: title, message: message)
+        showErrorView(title: title, message: message)
     }
 
     func showData(viewModels: [ForecastViewModel]) {
@@ -73,14 +72,14 @@ extension ForecastViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewModel = viewModels[section]
         let headerView = ForecastHeader(frame: .zero)
         headerView.update(viewModel: viewModel.header)
         return headerView
     }
 
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_: UITableView, heightForHeaderInSection _: Int) -> CGFloat {
         return 60
     }
 }
