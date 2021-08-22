@@ -15,6 +15,7 @@ protocol TodayView: AnyObject {
 
 class TodayViewController: UIViewController {
     @IBOutlet var vTopBar: TopBarView!
+    @IBOutlet var stackMain: UIStackView!
     @IBOutlet var ivWeather: UIImageView!
     @IBOutlet var lbLocation: UILabel!
     @IBOutlet var lbTemperature: UILabel!
@@ -42,6 +43,15 @@ class TodayViewController: UIViewController {
         super.viewWillAppear(animated)
         presenter?.onViewWillAppear()
     }
+
+    // MARK: - Button Action
+
+    @IBAction func btnShare_Action(_ sender: UIButton) {
+        sender.isHidden = true
+        let imageScreenshot = UIImage(view: stackMain)
+        presenter?.onShare(param: imageScreenshot)
+        sender.isHidden = false
+    }
 }
 
 extension TodayViewController: TodayView {
@@ -56,7 +66,7 @@ extension TodayViewController: TodayView {
         lbWeather.text = viewModel.mainWeather
         vPop.setData(image: AppImages.iconPop!, infor: viewModel.pop)
         vRain.setData(image: AppImages.iconRain!, infor: viewModel.rain)
-        vGrndLevel.setData(image: AppImages.iconGrndLevel!, infor: viewModel.grndLevel)
+        vGrndLevel.setData(image: AppImages.iconGrndLevel!, infor: viewModel.groundLevel)
         vWindspeed.setData(image: AppImages.iconWindspeed!, infor: viewModel.windSpeed)
         vSys.setData(image: AppImages.iconSys!, infor: viewModel.sys)
     }

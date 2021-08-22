@@ -22,7 +22,8 @@ final class TodayBuilder {
         let locationService: LocationServicing = DependencyContainer.sharedInstance.getService()
         let mapper = TodayViewModelMapper(formatter: formatter, stringFormatter: stringFormatter)
         let interactor = TodayInteractor(service: service, locationService: locationService)
-        let presenter = TodayPresenter(view: view, interactor: interactor, mapper: mapper)
+        let router = TodayRouter(viewController: view)
+        let presenter = TodayPresenter(view: view, interactor: interactor, router: router, mapper: mapper)
         view.presenter = presenter
 
         return view

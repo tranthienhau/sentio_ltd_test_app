@@ -9,11 +9,12 @@ import UIKit
 
 class ForecastHeader: UIView {
     @IBOutlet var contentView: UIView!
-    @IBOutlet weak var lbDay: UILabel!
+    @IBOutlet var lbDay: UILabel!
 
     private var dateString: String?
 
     // MARK: - SetUp Custom View
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()

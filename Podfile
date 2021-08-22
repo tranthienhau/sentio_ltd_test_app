@@ -8,7 +8,6 @@ target 'SentioWeather' do
   # Pods for SentioWeather
   pod 'Swinject'
   pod 'Moya'
-  pod 'NVActivityIndicatorView'
   pod 'SwiftLint'
   pod 'SDWebImage'
   pod 'Firebase/Firestore'
@@ -17,6 +16,7 @@ target 'SentioWeather' do
   target 'SentioWeatherTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Nimble'
   end
 
   target 'SentioWeatherUITests' do

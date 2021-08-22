@@ -3,12 +3,13 @@
 - .*ViewController.swift
 - .*Extension.swift
 - .*Cell.swift
+- .*Builder.swift
 - AppDelegate.swift
 - SceneDelegate.swift
 
 # Exclue project specific folders
-- blueprint/DependencyContainer
-- blueprint/Helper
+- SentioWeather/Service/Dependency
+- SentioWeather/Helper
 
 # Exclude all dependencies
 - Pods

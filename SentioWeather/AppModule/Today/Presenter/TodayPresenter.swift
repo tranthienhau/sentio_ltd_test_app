@@ -4,19 +4,23 @@
 //
 //  Created by Hau Tran on 8/21/21.
 //
+import UIKit
 
 protocol TodayPresenting {
     func onViewWillAppear()
+    func onShare(param: UIImage)
 }
 
 class TodayPresenter {
     weak var view: TodayView?
     private let interactor: TodayInteracting
+    private let router: TodayRouting
     private let mapper: TodayViewModelMapping
 
-    init(view: TodayView, interactor: TodayInteracting, mapper: TodayViewModelMapping) {
+    init(view: TodayView, interactor: TodayInteracting, router: TodayRouting, mapper: TodayViewModelMapping) {
         self.view = view
         self.interactor = interactor
+        self.router = router
         self.mapper = mapper
     }
 }
@@ -32,6 +36,10 @@ extension TodayPresenter: TodayPresenting {
                 self.view?.showError(title: "Oops!", message: error.localizedDescription)
             }
         }
+    }
+
+    func onShare(param: UIImage) {
+        router.presentShareView(with: param)
     }
 }
 
