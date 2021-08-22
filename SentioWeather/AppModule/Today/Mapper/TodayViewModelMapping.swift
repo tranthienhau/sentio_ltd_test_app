@@ -29,11 +29,11 @@ final class TodayViewModelMapper: TodayViewModelMapping {
             locationName: response.location.name,
             mainWeather: todayDatas.first?.weather.first?.main ?? "",
             icon: stringFormatter.icon(name: todayDatas.first?.weather.first?.icon) ?? "",
-            pop: todayDatas.first?.pop ?? 0,
-            windSpeed: todayDatas.first?.wind.speed ?? 0,
+            pop: stringFormatter.pop(value: todayDatas.first?.pop) ?? "" ,
+            windSpeed: stringFormatter.windSpeed(value: todayDatas.first?.wind.speed) ?? "",
             sys: todayDatas.first?.sys.pod ?? "",
-            grndLevel: todayDatas.first?.main.groundLevel ?? 0,
-            rain: todayDatas.first?.rain?.threeH ?? 0.0
+            grndLevel: stringFormatter.grndLevel(value: todayDatas.first?.main.groundLevel) ?? "",
+            rain: stringFormatter.rain(value: todayDatas.first?.rain?.threeH) ?? ""
         )
     }
 

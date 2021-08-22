@@ -12,10 +12,10 @@ struct TodayViewModel {
     let locationName: String
     let mainWeather: String
     let icon: String
-    let pop: Double
-    let windSpeed: Double
+    let pop: String
+    let windSpeed: String
     let sys: String
-    let grndLevel: Int
-    let rain: Double
+    let grndLevel: String
+    let rain: String
     // ....
 }

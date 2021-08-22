@@ -45,8 +45,8 @@ class TodayViewController: UIViewController {
 }
 
 extension TodayViewController: TodayView {
-    func showError(title _: String, message _: String) {
-        // TODO:
+    func showError(title: String, message: String) {
+        self.showErrorView(title: title, error: message)
     }
 
     func showData(viewModel: TodayViewModel) {
@@ -54,11 +54,10 @@ extension TodayViewController: TodayView {
         lbLocation.text = viewModel.locationName
         lbTemperature.text = viewModel.temperature
         lbWeather.text = viewModel.mainWeather
-        // TODO: fix??
-        vPop.setDataWheather(image: AppImages.iconPop!, infor: "\(viewModel.pop * 100)%")
-        vRain.setDataWheather(image: AppImages.iconRain!, infor: "\(viewModel.rain) mm")
-        vGrndLevel.setDataWheather(image: AppImages.iconGrndLevel!, infor: "\(viewModel.grndLevel) hPa")
-        vWindspeed.setDataWheather(image: AppImages.iconWindspeed!, infor: "\(viewModel.windSpeed) km/h")
+        vPop.setDataWheather(image: AppImages.iconPop!, infor: viewModel.pop)
+        vRain.setDataWheather(image: AppImages.iconRain!, infor: viewModel.rain)
+        vGrndLevel.setDataWheather(image: AppImages.iconGrndLevel!, infor: viewModel.grndLevel)
+        vWindspeed.setDataWheather(image: AppImages.iconWindspeed!, infor: viewModel.windSpeed)
         vSys.setDataWheather(image: AppImages.iconSys!, infor: viewModel.sys.uppercased())
     }
 }
