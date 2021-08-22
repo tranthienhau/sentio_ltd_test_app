@@ -1,19 +1,19 @@
 //
-//  ItemWheatherInforView.swift
+//  ForecastHeader.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 21/08/2021.
+//  Created by Hau Tran on 22/08/2021.
 //
 
 import UIKit
 
-class ItemWheatherInforView: UIView {
+class ForecastHeader: UIView {
     @IBOutlet var contentView: UIView!
-    @IBOutlet var ivIconWheather: UIImageView!
-    @IBOutlet var lbInforWeather: UILabel!
+    @IBOutlet weak var lbDay: UILabel!
+
+    private var dateString: String?
 
     // MARK: - SetUp Custom View
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpView()
@@ -25,7 +25,7 @@ class ItemWheatherInforView: UIView {
     }
 
     func setUpView() {
-        Bundle.main.loadNibNamed("ItemWheatherInforView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("ForecastHeader", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -33,10 +33,10 @@ class ItemWheatherInforView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        lbDay.text = dateString
     }
 
-    func setDataWheather(image: UIImage, infor: String) {
-        ivIconWheather.image = image
-        lbInforWeather.text = infor
+    func update(viewModel: ForecastHeaderViewModel) {
+        lbDay.text = viewModel.title
     }
 }

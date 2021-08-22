@@ -11,6 +11,8 @@ target 'SentioWeather' do
   pod 'NVActivityIndicatorView'
   pod 'SwiftLint'
   pod 'SDWebImage'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
   target 'SentioWeatherTests' do
     inherit! :search_paths

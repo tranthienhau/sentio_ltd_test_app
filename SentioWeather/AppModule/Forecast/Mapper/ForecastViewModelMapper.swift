@@ -2,7 +2,7 @@
 //  ForecastViewModelMapper.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Foundation
@@ -33,7 +33,7 @@ final class ForecastViewModelMapper: ForecastViewModelMapping {
                 let iconUrl = self.stringFormatter.icon(name: item.weather.first?.icon)
                 return ForecastItemViewModel(
                     time: time,
-                    description: item.weather.description,
+                    description: item.weather.first?.main ?? "",
                     temperature: weather,
                     iconUrl: iconUrl
                 )

@@ -2,7 +2,7 @@
 //  TodayViewModelMapping.swift
 //  SentioWeather
 //
-//  Created by Duy Nguyen on 8/21/21.
+//  Created by Hau Tran on 8/21/21.
 //
 
 import Foundation
@@ -26,7 +26,14 @@ final class TodayViewModelMapper: TodayViewModelMapping {
                 temperature: todayDatas.first?.main.temperature ?? 0,
                 metric: .celsius
             ),
-            locationName: response.location.name
+            locationName: response.location.name,
+            mainWeather: todayDatas.first?.weather.first?.main ?? "",
+            icon: stringFormatter.icon(name: todayDatas.first?.weather.first?.icon) ?? "",
+            pop: stringFormatter.pop(value: todayDatas.first?.pop) ?? "",
+            windSpeed: stringFormatter.windSpeed(value: todayDatas.first?.wind.speed) ?? "",
+            sys: (todayDatas.first?.sys.pod ?? "").uppercased(),
+            grndLevel: stringFormatter.groundLevel(value: todayDatas.first?.main.groundLevel) ?? "",
+            rain: stringFormatter.rain(value: todayDatas.first?.rain?.threeH) ?? ""
         )
     }
 

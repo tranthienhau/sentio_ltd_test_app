@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="SentioWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="lbError" destination="mQP-jo-NKo" id="xPE-Th-MXq"/>
+                <outlet property="lbTitleError" destination="nhG-qU-0vR" id="3tW-kk-FKK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Og-ev-BDZ">
+                    <rect key="frame" x="0.0" y="288" width="414" height="230.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconWarning" translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-Jb-Fxm">
+                            <rect key="frame" x="167" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="bBz-8i-z0z"/>
+                                <constraint firstAttribute="height" constant="80" id="c6W-OJ-8zZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-qU-0vR">
+                            <rect key="frame" x="20" y="130" width="374" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQP-jo-NKo">
+                            <rect key="frame" x="40" y="210" width="334" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Pk2-Jb-Fxm" firstAttribute="top" secondItem="3Og-ev-BDZ" secondAttribute="top" id="1qc-ci-7la"/>
+                        <constraint firstAttribute="bottom" secondItem="mQP-jo-NKo" secondAttribute="bottom" id="6gb-LY-1XP"/>
+                        <constraint firstAttribute="trailing" secondItem="mQP-jo-NKo" secondAttribute="trailing" constant="40" id="6go-KJ-1lL"/>
+                        <constraint firstItem="mQP-jo-NKo" firstAttribute="top" secondItem="nhG-qU-0vR" secondAttribute="bottom" constant="50" id="7aR-3c-Qda"/>
+                        <constraint firstAttribute="trailing" secondItem="nhG-qU-0vR" secondAttribute="trailing" constant="20" id="8Er-w7-OUy"/>
+                        <constraint firstItem="nhG-qU-0vR" firstAttribute="leading" secondItem="3Og-ev-BDZ" secondAttribute="leading" constant="20" id="FQh-1G-6xc"/>
+                        <constraint firstItem="nhG-qU-0vR" firstAttribute="top" secondItem="Pk2-Jb-Fxm" secondAttribute="bottom" constant="50" id="TAt-bd-Fol"/>
+                        <constraint firstItem="Pk2-Jb-Fxm" firstAttribute="centerX" secondItem="3Og-ev-BDZ" secondAttribute="centerX" id="Xyl-ZK-nnK"/>
+                        <constraint firstItem="mQP-jo-NKo" firstAttribute="leading" secondItem="3Og-ev-BDZ" secondAttribute="leading" constant="40" id="hbS-kb-4Wq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3Og-ev-BDZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NGy-GF-i7Z"/>
+                <constraint firstItem="3Og-ev-BDZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-50" id="x9g-ya-H9g"/>
+                <constraint firstItem="3Og-ev-BDZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xZ0-9v-QIS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconWarning" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
