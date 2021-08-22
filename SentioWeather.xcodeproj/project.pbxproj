@@ -79,6 +79,8 @@
 		AAB9A06326D1016A006C10F9 /* TopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB9A06226D1016A006C10F9 /* TopBarView.xib */; };
 		AAB9A06A26D10505006C10F9 /* ForecastViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9A06926D10505006C10F9 /* ForecastViewRouter.swift */; };
 		AAC27D7D26D1482D007663F4 /* AppResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC27D7C26D1482D007663F4 /* AppResource.swift */; };
+		AAD6903E26D27DA200BE540D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6903D26D27DA200BE540D /* UIImage+Extension.swift */; };
+		AAD6904026D2898200BE540D /* TodayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6903F26D2898200BE540D /* TodayRouter.swift */; };
 		C12EDF13226C0DCF004D4DD2 /* Pods_SentioWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB796DCE0C2161E236C3AD4 /* Pods_SentioWeatherTests.framework */; };
 		EDCB92494EAD764A1C58E4F5 /* Pods_SentioWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5ACB652D5D9103A958290 /* Pods_SentioWeather.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,8 @@
 		AAB9A06226D1016A006C10F9 /* TopBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarView.xib; sourceTree = "<group>"; };
 		AAB9A06926D10505006C10F9 /* ForecastViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewRouter.swift; sourceTree = "<group>"; };
 		AAC27D7C26D1482D007663F4 /* AppResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResource.swift; sourceTree = "<group>"; };
+		AAD6903D26D27DA200BE540D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		AAD6903F26D2898200BE540D /* TodayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayRouter.swift; path = SentioWeather/Extensions/TodayRouter.swift; sourceTree = SOURCE_ROOT; };
 		C14B9CF00BA377FD95B483E7 /* Pods-SentioWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather/Pods-SentioWeather.release.xcconfig"; sourceTree = "<group>"; };
 		C9273B31DE6CFF52A47824FB /* Pods-SentioWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeatherTests.debug.xcconfig"; path = "Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA336A0969AAEFFE481C5606 /* Pods-SentioWeather-SentioWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather-SentioWeatherUITests/Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 				2630492926D24F4C00450B4E /* Double+Extension.swift */,
 				263048F926D23C1F00450B4E /* Encodable+Extension.swift */,
 				AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */,
+				AAD6903D26D27DA200BE540D /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -690,6 +695,14 @@
 			path = ErrorView;
 			sourceTree = "<group>";
 		};
+		AAB9A05026D0EB80006C10F9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AAD6903F26D2898200BE540D /* TodayRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		AAB9A05126D0EB92006C10F9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1088,7 +1101,9 @@
 				263048E126D2392200450B4E /* DatabaseService.swift in Sources */,
 				26DEB2AF26D104A6004681F3 /* ForecastViewModel.swift in Sources */,
 				26DEB24426D0EFFD004681F3 /* TodayViewModel.swift in Sources */,
+				AAD6904026D2898200BE540D /* TodayRouter.swift in Sources */,
 				26DEB21426D0C67B004681F3 /* RestClient.swift in Sources */,
+				AAD6903E26D27DA200BE540D /* UIImage+Extension.swift in Sources */,
 				26D5255326D0A932005D73E6 /* ViewController.swift in Sources */,
 				26DEB1BE26D0BA42004681F3 /* WeatherTabViewController.swift in Sources */,
 				263048E626D2393E00450B4E /* FirestoreService.swift in Sources */,
