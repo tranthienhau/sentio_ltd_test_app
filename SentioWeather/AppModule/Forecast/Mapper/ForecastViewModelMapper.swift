@@ -43,11 +43,13 @@ final class ForecastViewModelMapper: ForecastViewModelMapping {
         }
     }
 
-    private func groupWeatherDateResponses(responses: [WeatherDataResponse]) -> [Date: [WeatherDataResponse]] {
+    private func groupWeatherDateResponses(
+        responses: [WeatherDataResponse]
+    ) -> [(key: Date, value: [WeatherDataResponse])] {
         return Dictionary(grouping: responses) { (response) -> Date in
             let datetime = formatter.date(from: response.datetime)
             return Calendar.current.startOfDay(for: datetime)
         }
-        // TODO: sorted
+        .sorted { $0.0 < $1.0 }
     }
 }
