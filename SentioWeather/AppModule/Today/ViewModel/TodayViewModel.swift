@@ -15,6 +15,6 @@ struct TodayViewModel {
     let pop: String
     let windSpeed: String
     let sys: String
-    let grndLevel: String
+    let groundLevel: String
     let rain: String
 }

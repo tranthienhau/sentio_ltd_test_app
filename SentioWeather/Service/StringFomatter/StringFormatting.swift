@@ -41,13 +41,13 @@ final class StringFormatter: StringFormatting {
     }
 
     func pop(value: Double?) -> String? {
-        guard let value = value else {return nil}
+        guard let value = value else { return nil }
         let roundValue = value.rounded(toPlaces: 2)
         return "\(roundValue * 100)%"
     }
 
     func windSpeed(value: Double?) -> String? {
-        guard let value = value else {return nil}
+        guard let value = value else { return nil }
         let roundValue = value.rounded(toPlaces: 2)
         return "\(roundValue) km/h"
     }
@@ -58,7 +58,7 @@ final class StringFormatter: StringFormatting {
     }
 
     func rain(value: Double?) -> String? {
-        guard let value = value else {return nil}
+        guard let value = value else { return nil }
         let roundValue = value.rounded(toPlaces: 2)
         return "\(roundValue) mm"
     }

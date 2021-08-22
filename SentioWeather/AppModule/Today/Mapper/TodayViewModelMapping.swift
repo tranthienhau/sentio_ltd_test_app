@@ -32,7 +32,7 @@ final class TodayViewModelMapper: TodayViewModelMapping {
             pop: stringFormatter.pop(value: todayDatas.first?.pop) ?? "",
             windSpeed: stringFormatter.windSpeed(value: todayDatas.first?.wind.speed) ?? "",
             sys: (todayDatas.first?.sys.pod ?? "").uppercased(),
-            grndLevel: stringFormatter.groundLevel(value: todayDatas.first?.main.groundLevel) ?? "",
+            groundLevel: stringFormatter.groundLevel(value: todayDatas.first?.main.groundLevel) ?? "",
             rain: stringFormatter.rain(value: todayDatas.first?.rain?.threeH) ?? ""
         )
     }
