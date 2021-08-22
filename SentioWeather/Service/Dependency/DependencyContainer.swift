@@ -24,8 +24,17 @@ class DependencyContainer {
         register(service: StringFormatting.self) { _ in
             StringFormatter()
         }
+        register(service: DatabaseServicing.self) { _ in
+            FirestoreService()
+        }
+        register(service: WeatherDatabaseServicing.self) { resolver in
+            WeatherDatabaseService(databaseService: resolver.resolve(DatabaseServicing.self)!)
+        }
         register(service: WeatherServicing.self) { resolver in
-            WeatherService(repository: resolver.resolve(WeatherRepositoring.self)!)
+            WeatherService(
+                repository: resolver.resolve(WeatherRepositoring.self)!,
+                database: resolver.resolve(WeatherDatabaseServicing.self)!
+            )
         }
         register(service: LocationServicing.self) { _ in
             LocationService()
