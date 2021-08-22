@@ -41,7 +41,9 @@ extension TodayInteractor: TodayInteracting {
     }
 
     private func fetchWeatherData(completion: @escaping (Result<WeatherForecastResponse, Error>) -> Void) {
-        guard let latitude = userLocation?.0, let longitude = userLocation?.1 else {
+        guard let latitude = userLocation?.0,
+              let longitude = userLocation?.1,
+              latitude > 0.0, longitude > 0.0 else {
             completion(.failure(LocationServiceError.invalidCoordinate))
             return
         }

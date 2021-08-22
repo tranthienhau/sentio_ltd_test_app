@@ -56,7 +56,7 @@ extension TodayViewController: TodayView {
         lbWeather.text = viewModel.mainWeather
         vPop.setData(image: AppImages.iconPop!, infor: viewModel.pop)
         vRain.setData(image: AppImages.iconRain!, infor: viewModel.rain)
-        vGrndLevel.setData(image: AppImages.iconGrndLevel!, infor: viewModel.grndLevel)
+        vGrndLevel.setData(image: AppImages.iconGrndLevel!, infor: viewModel.groundLevel)
         vWindspeed.setData(image: AppImages.iconWindspeed!, infor: viewModel.windSpeed)
         vSys.setData(image: AppImages.iconSys!, infor: viewModel.sys)
     }

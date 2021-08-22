@@ -19,12 +19,27 @@
 		263048FA26D23C1F00450B4E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048F926D23C1F00450B4E /* Encodable+Extension.swift */; };
 		2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630490126D244D900450B4E /* WeatherDatabaseService.swift */; };
 		2630492A26D24F4C00450B4E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630492926D24F4C00450B4E /* Double+Extension.swift */; };
+		2681036A26D27B8C00A4BC7E /* WeatherRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681036926D27B8C00A4BC7E /* WeatherRouterMock.swift */; };
+		2681037826D27C2200A4BC7E /* WeatherPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681037726D27C2200A4BC7E /* WeatherPresenterTests.swift */; };
+		2681038026D27CED00A4BC7E /* TodayInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681037F26D27CED00A4BC7E /* TodayInteractorMock.swift */; };
+		2681038526D27D3A00A4BC7E /* TodayPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681038426D27D3A00A4BC7E /* TodayPresenterTests.swift */; };
+		2681038A26D27D6E00A4BC7E /* TodayViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681038926D27D6E00A4BC7E /* TodayViewMock.swift */; };
+		2681038F26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681038E26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift */; };
+		2681039426D27EC600A4BC7E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681039326D27EC600A4BC7E /* Common.swift */; };
+		2681039E26D2810D00A4BC7E /* ForecastViewModelMapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681039B26D2810C00A4BC7E /* ForecastViewModelMapperMock.swift */; };
+		2681039F26D2810D00A4BC7E /* ForecastInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681039C26D2810C00A4BC7E /* ForecastInteractorMock.swift */; };
+		268103A026D2810D00A4BC7E /* ForecastViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681039D26D2810D00A4BC7E /* ForecastViewMock.swift */; };
+		268103A526D2820700A4BC7E /* ForecastPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103A426D2820700A4BC7E /* ForecastPresenterTests.swift */; };
+		268103AD26D2835000A4BC7E /* LocationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103AC26D2835000A4BC7E /* LocationServiceMock.swift */; };
+		268103B226D283BD00A4BC7E /* WeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103B126D283BD00A4BC7E /* WeatherServiceMock.swift */; };
+		268103B726D284BF00A4BC7E /* TodayInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103B626D284BF00A4BC7E /* TodayInteractorTests.swift */; };
+		268103E126D28CD100A4BC7E /* ForecastInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103E026D28CD100A4BC7E /* ForecastInteractorTests.swift */; };
+		268103E726D28D4000A4BC7E /* StringFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103E626D28D4000A4BC7E /* StringFormatterTests.swift */; };
 		26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5254E26D0A932005D73E6 /* AppDelegate.swift */; };
 		26D5255326D0A932005D73E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5255226D0A932005D73E6 /* ViewController.swift */; };
 		26D5255626D0A932005D73E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255426D0A932005D73E6 /* Main.storyboard */; };
 		26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255726D0A935005D73E6 /* Assets.xcassets */; };
 		26D5255B26D0A935005D73E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255926D0A935005D73E6 /* LaunchScreen.storyboard */; };
-		26D5256626D0A936005D73E6 /* SentioWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5256526D0A936005D73E6 /* SentioWeatherTests.swift */; };
 		26D5257126D0A936005D73E6 /* SentioWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5257026D0A936005D73E6 /* SentioWeatherUITests.swift */; };
 		26DEB1BE26D0BA42004681F3 /* WeatherTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB1BC26D0BA42004681F3 /* WeatherTabViewController.swift */; };
 		26DEB1BF26D0BA42004681F3 /* WeatherTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB1BD26D0BA42004681F3 /* WeatherTabViewController.xib */; };
@@ -98,6 +113,22 @@
 		263048F926D23C1F00450B4E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		2630490126D244D900450B4E /* WeatherDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDatabaseService.swift; sourceTree = "<group>"; };
 		2630492926D24F4C00450B4E /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		2681036926D27B8C00A4BC7E /* WeatherRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRouterMock.swift; sourceTree = "<group>"; };
+		2681037726D27C2200A4BC7E /* WeatherPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenterTests.swift; sourceTree = "<group>"; };
+		2681037F26D27CED00A4BC7E /* TodayInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractorMock.swift; sourceTree = "<group>"; };
+		2681038426D27D3A00A4BC7E /* TodayPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenterTests.swift; sourceTree = "<group>"; };
+		2681038926D27D6E00A4BC7E /* TodayViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewMock.swift; sourceTree = "<group>"; };
+		2681038E26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModelMapperMock.swift; sourceTree = "<group>"; };
+		2681039326D27EC600A4BC7E /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		2681039B26D2810C00A4BC7E /* ForecastViewModelMapperMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewModelMapperMock.swift; sourceTree = "<group>"; };
+		2681039C26D2810C00A4BC7E /* ForecastInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastInteractorMock.swift; sourceTree = "<group>"; };
+		2681039D26D2810D00A4BC7E /* ForecastViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewMock.swift; sourceTree = "<group>"; };
+		268103A426D2820700A4BC7E /* ForecastPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastPresenterTests.swift; sourceTree = "<group>"; };
+		268103AC26D2835000A4BC7E /* LocationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceMock.swift; sourceTree = "<group>"; };
+		268103B126D283BD00A4BC7E /* WeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMock.swift; sourceTree = "<group>"; };
+		268103B626D284BF00A4BC7E /* TodayInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractorTests.swift; sourceTree = "<group>"; };
+		268103E026D28CD100A4BC7E /* ForecastInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastInteractorTests.swift; sourceTree = "<group>"; };
+		268103E626D28D4000A4BC7E /* StringFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatterTests.swift; sourceTree = "<group>"; };
 		26D5254B26D0A932005D73E6 /* SentioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5254E26D0A932005D73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D5255226D0A932005D73E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +137,6 @@
 		26D5255A26D0A935005D73E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D5255C26D0A935005D73E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D5256126D0A936005D73E6 /* SentioWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentioWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		26D5256526D0A936005D73E6 /* SentioWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentioWeatherTests.swift; sourceTree = "<group>"; };
 		26D5256726D0A936005D73E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D5256C26D0A936005D73E6 /* SentioWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentioWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5257026D0A936005D73E6 /* SentioWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentioWeatherUITests.swift; sourceTree = "<group>"; };
@@ -233,6 +263,89 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2681036426D27B4D00A4BC7E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2681037E26D27CC400A4BC7E /* Service */,
+				2681037D26D27CBF00A4BC7E /* Forecast */,
+				2681037C26D27CBA00A4BC7E /* Today */,
+				2681036826D27B7E00A4BC7E /* WeatherTab */,
+				2681039326D27EC600A4BC7E /* Common.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2681036526D27B5400A4BC7E /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				2681038426D27D3A00A4BC7E /* TodayPresenterTests.swift */,
+				268103B626D284BF00A4BC7E /* TodayInteractorTests.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		2681036626D27B5C00A4BC7E /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				268103E026D28CD100A4BC7E /* ForecastInteractorTests.swift */,
+				268103A426D2820700A4BC7E /* ForecastPresenterTests.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		2681036726D27B6300A4BC7E /* WeatherTab */ = {
+			isa = PBXGroup;
+			children = (
+				2681037726D27C2200A4BC7E /* WeatherPresenterTests.swift */,
+			);
+			path = WeatherTab;
+			sourceTree = "<group>";
+		};
+		2681036826D27B7E00A4BC7E /* WeatherTab */ = {
+			isa = PBXGroup;
+			children = (
+				2681036926D27B8C00A4BC7E /* WeatherRouterMock.swift */,
+			);
+			path = WeatherTab;
+			sourceTree = "<group>";
+		};
+		2681037C26D27CBA00A4BC7E /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				2681037F26D27CED00A4BC7E /* TodayInteractorMock.swift */,
+				2681038926D27D6E00A4BC7E /* TodayViewMock.swift */,
+				2681038E26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		2681037D26D27CBF00A4BC7E /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				2681039C26D2810C00A4BC7E /* ForecastInteractorMock.swift */,
+				2681039D26D2810D00A4BC7E /* ForecastViewMock.swift */,
+				2681039B26D2810C00A4BC7E /* ForecastViewModelMapperMock.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		2681037E26D27CC400A4BC7E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				268103AC26D2835000A4BC7E /* LocationServiceMock.swift */,
+				268103B126D283BD00A4BC7E /* WeatherServiceMock.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		268103E526D28D3100A4BC7E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				268103E626D28D4000A4BC7E /* StringFormatterTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		26D5254226D0A932005D73E6 = {
 			isa = PBXGroup;
 			children = (
@@ -279,7 +392,11 @@
 		26D5256426D0A936005D73E6 /* SentioWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				26D5256526D0A936005D73E6 /* SentioWeatherTests.swift */,
+				268103E526D28D3100A4BC7E /* Service */,
+				2681036726D27B6300A4BC7E /* WeatherTab */,
+				2681036626D27B5C00A4BC7E /* Forecast */,
+				2681036526D27B5400A4BC7E /* Today */,
+				2681036426D27B4D00A4BC7E /* Mocks */,
 				26D5256726D0A936005D73E6 /* Info.plist */,
 			);
 			path = SentioWeatherTests;
@@ -322,7 +439,6 @@
 				26DEB24226D0EFF1004681F3 /* ViewModel */,
 				AAB9A05226D0EB9C006C10F9 /* Interactor */,
 				AAB9A05126D0EB92006C10F9 /* Presenter */,
-				AAB9A05026D0EB80006C10F9 /* Router */,
 				26DEB1D926D0BE79004681F3 /* View */,
 				26DEB1D226D0BE21004681F3 /* Builder */,
 			);
@@ -574,13 +690,6 @@
 			path = ErrorView;
 			sourceTree = "<group>";
 		};
-		AAB9A05026D0EB80006C10F9 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		AAB9A05126D0EB92006C10F9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +806,7 @@
 				26D5255D26D0A936005D73E6 /* Sources */,
 				26D5255E26D0A936005D73E6 /* Frameworks */,
 				26D5255F26D0A936005D73E6 /* Resources */,
+				8742DD3C38FBFAFF280D082B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -868,6 +978,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8742DD3C38FBFAFF280D082B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		91D59DD9D2CE6AB2B17EA01D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -981,7 +1108,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D5256626D0A936005D73E6 /* SentioWeatherTests.swift in Sources */,
+				268103AD26D2835000A4BC7E /* LocationServiceMock.swift in Sources */,
+				2681038526D27D3A00A4BC7E /* TodayPresenterTests.swift in Sources */,
+				268103A526D2820700A4BC7E /* ForecastPresenterTests.swift in Sources */,
+				268103A026D2810D00A4BC7E /* ForecastViewMock.swift in Sources */,
+				268103B726D284BF00A4BC7E /* TodayInteractorTests.swift in Sources */,
+				268103B226D283BD00A4BC7E /* WeatherServiceMock.swift in Sources */,
+				268103E126D28CD100A4BC7E /* ForecastInteractorTests.swift in Sources */,
+				2681039F26D2810D00A4BC7E /* ForecastInteractorMock.swift in Sources */,
+				268103E726D28D4000A4BC7E /* StringFormatterTests.swift in Sources */,
+				2681036A26D27B8C00A4BC7E /* WeatherRouterMock.swift in Sources */,
+				2681039E26D2810D00A4BC7E /* ForecastViewModelMapperMock.swift in Sources */,
+				2681038A26D27D6E00A4BC7E /* TodayViewMock.swift in Sources */,
+				2681037826D27C2200A4BC7E /* WeatherPresenterTests.swift in Sources */,
+				2681038026D27CED00A4BC7E /* TodayInteractorMock.swift in Sources */,
+				2681038F26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift in Sources */,
+				2681039426D27EC600A4BC7E /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
