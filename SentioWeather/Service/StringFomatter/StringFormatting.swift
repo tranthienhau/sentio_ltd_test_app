@@ -26,7 +26,7 @@ protocol StringFormatting {
     func icon(name: String?) -> String?
     func pop(value: Double?) -> String?
     func windSpeed(value: Double?) -> String?
-    func grndLevel(value: Int?) -> String?
+    func groundLevel(value: Int?) -> String?
     func rain(value: Double?) -> String?
 }
 
@@ -41,22 +41,22 @@ final class StringFormatter: StringFormatting {
     }
 
     func pop(value: Double?) -> String? {
-        guard let value = value else {return nil}
+        guard let value = value else { return nil }
         return "\(value * 100)%"
     }
 
     func windSpeed(value: Double?) -> String? {
-        guard let value = value else {return nil}
+        guard let value = value else { return nil }
         return "\(value) km/h"
     }
 
-    func grndLevel(value: Int?) -> String? {
-        guard let value = value else {return nil}
-        return "\(value)  hPa"
+    func groundLevel(value: Int?) -> String? {
+        guard let value = value else { return nil }
+        return "\(value) hPa"
     }
 
     func rain(value: Double?) -> String? {
-        guard let value = value else {return nil}
-        return "\(value)  mm"
+        guard let value = value else { return nil }
+        return "\(value) mm"
     }
 }

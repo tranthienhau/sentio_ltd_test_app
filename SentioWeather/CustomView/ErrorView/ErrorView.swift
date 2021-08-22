@@ -8,22 +8,15 @@
 import UIKit
 
 class ErrorView: UIViewController {
-
     @IBOutlet var lbTitleError: UILabel!
     @IBOutlet var lbError: UILabel!
 
-    private var titleError: String?
-    private var errorDescription: String?
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        lbTitleError.text = titleError
-        lbError.text = errorDescription
     }
 
-    func setError(title: String, error: String) {
-        titleError = title
-        errorDescription = error
+    func setError(title: String, message: String) {
+        lbTitleError.text = title
+        lbError.text = message
     }
 }

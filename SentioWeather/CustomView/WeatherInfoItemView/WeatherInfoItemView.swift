@@ -35,7 +35,7 @@ class WeatherInfoItemView: UIView {
         super.awakeFromNib()
     }
 
-    func setDataWheather(image: UIImage, infor: String) {
+    func setData(image: UIImage, infor: String) {
         ivIconWeather.image = image
         lbInforWeather.text = infor
     }

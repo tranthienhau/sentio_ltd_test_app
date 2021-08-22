@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		05E063B96F442782A92954E8 /* Pods_SentioWeather_SentioWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AECAB546BB8607E84D463A1 /* Pods_SentioWeather_SentioWeatherUITests.framework */; };
+		2630489A26D17C4E00450B4E /* WeatherInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630489826D17C4D00450B4E /* WeatherInfoItemView.swift */; };
+		2630489B26D17C4E00450B4E /* WeatherInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2630489926D17C4D00450B4E /* WeatherInfoItemView.xib */; };
+		263048AA26D17D1D00450B4E /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263048A826D17D1D00450B4E /* ForecastCell.xib */; };
+		263048AB26D17D1D00450B4E /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048A926D17D1D00450B4E /* ForecastCell.swift */; };
 		263048B426D1F83800450B4E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048B326D1F83800450B4E /* LocationService.swift */; };
 		263048E126D2392200450B4E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048E026D2392200450B4E /* DatabaseService.swift */; };
 		263048E626D2393E00450B4E /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048E526D2393E00450B4E /* FirestoreService.swift */; };
 		263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263048EA26D23A6D00450B4E /* GoogleService-Info.plist */; };
 		263048FA26D23C1F00450B4E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048F926D23C1F00450B4E /* Encodable+Extension.swift */; };
 		2630490226D244D900450B4E /* WeatherDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630490126D244D900450B4E /* WeatherDatabaseService.swift */; };
-		2630489A26D17C4E00450B4E /* WeatherInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630489826D17C4D00450B4E /* WeatherInfoItemView.swift */; };
-		2630489B26D17C4E00450B4E /* WeatherInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2630489926D17C4D00450B4E /* WeatherInfoItemView.xib */; };
-		263048AA26D17D1D00450B4E /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263048A826D17D1D00450B4E /* ForecastCell.xib */; };
-		263048AB26D17D1D00450B4E /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263048A926D17D1D00450B4E /* ForecastCell.swift */; };
 		26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5254E26D0A932005D73E6 /* AppDelegate.swift */; };
 		26D5255326D0A932005D73E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5255226D0A932005D73E6 /* ViewController.swift */; };
 		26D5255626D0A932005D73E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255426D0A932005D73E6 /* Main.storyboard */; };
@@ -84,16 +84,16 @@
 
 /* Begin PBXFileReference section */
 		0AECAB546BB8607E84D463A1 /* Pods_SentioWeather_SentioWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentioWeather_SentioWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2630489826D17C4D00450B4E /* WeatherInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoItemView.swift; sourceTree = "<group>"; };
+		2630489926D17C4D00450B4E /* WeatherInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherInfoItemView.xib; sourceTree = "<group>"; };
+		263048A826D17D1D00450B4E /* ForecastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCell.xib; sourceTree = "<group>"; };
+		263048A926D17D1D00450B4E /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		263048B326D1F83800450B4E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		263048E026D2392200450B4E /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		263048E526D2393E00450B4E /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		263048EA26D23A6D00450B4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		263048F926D23C1F00450B4E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		2630490126D244D900450B4E /* WeatherDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDatabaseService.swift; sourceTree = "<group>"; };
-		2630489826D17C4D00450B4E /* WeatherInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoItemView.swift; sourceTree = "<group>"; };
-		2630489926D17C4D00450B4E /* WeatherInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherInfoItemView.xib; sourceTree = "<group>"; };
-		263048A826D17D1D00450B4E /* ForecastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCell.xib; sourceTree = "<group>"; };
-		263048A926D17D1D00450B4E /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		26D5254B26D0A932005D73E6 /* SentioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5254E26D0A932005D73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D5255226D0A932005D73E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				263048F926D23C1F00450B4E /* Encodable+Extension.swift */,
+				AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				263048F826D23C0F00450B4E /* Extensions */,
-				AA9A4AB426D21A6D00C88E36 /* Extension */,
 				AAC27D7B26D14815007663F4 /* Helper */,
 				AAB9A05926D0FC40006C10F9 /* CustomView */,
 				26DEB20426D0C346004681F3 /* Model */,
@@ -555,14 +555,6 @@
 			path = ErrorView;
 			sourceTree = "<group>";
 		};
-		AA9A4AB426D21A6D00C88E36 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				AA9A4AB526D21A8E00C88E36 /* UIViewController+Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		AAB9A05026D0EB80006C10F9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,7 +763,6 @@
 				263048AA26D17D1D00450B4E /* ForecastCell.xib in Resources */,
 				26DEB1ED26D0BEC0004681F3 /* ForecastViewController.xib in Resources */,
 				263048EB26D23A6D00450B4E /* GoogleService-Info.plist in Resources */,
-				AAC27D8626D14E4F007663F4 /* InforWeatherTableCell.xib in Resources */,
 				26D5255826D0A935005D73E6 /* Assets.xcassets in Resources */,
 				26D5255626D0A932005D73E6 /* Main.storyboard in Resources */,
 				26DEB1BF26D0BA42004681F3 /* WeatherTabViewController.xib in Resources */,
