@@ -2,7 +2,7 @@
 //  TodayViewModelMapperMock.swift
 //  SentioWeatherTests
 //
-//  Created by Duy Nguyen on 8/22/21.
+//  Created by Hau Tran on 8/22/21.
 //
 
 import Foundation
@@ -12,9 +12,9 @@ final class TodayViewModelMapperMock: TodayViewModelMapping {
     enum Invocation {
         case todayViewModel
     }
-    
+
     var invocations: [Invocation] = []
-    var stubViewModel: TodayViewModel = TodayViewModel(
+    var stubViewModel = TodayViewModel(
         temperature: "",
         locationName: "",
         mainWeather: "",
@@ -25,11 +25,9 @@ final class TodayViewModelMapperMock: TodayViewModelMapping {
         groundLevel: "",
         rain: ""
     )
-    
-    func todayViewModel(from response: WeatherForecastResponse) -> TodayViewModel {
+
+    func todayViewModel(from _: WeatherForecastResponse) -> TodayViewModel {
         invocations.append(.todayViewModel)
         return stubViewModel
     }
-    
-    
 }

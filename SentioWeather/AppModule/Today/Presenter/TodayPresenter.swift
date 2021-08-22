@@ -8,16 +8,16 @@ import UIKit
 
 protocol TodayPresenting {
     func onViewWillAppear()
-    func btnShareTap(param: UIImage)
+    func onShare(param: UIImage)
 }
 
 class TodayPresenter {
     weak var view: TodayView?
     private let interactor: TodayInteracting
-    private let router: TodayRoutering
+    private let router: TodayRouting
     private let mapper: TodayViewModelMapping
 
-    init(view: TodayView, interactor: TodayInteracting, router: TodayRoutering, mapper: TodayViewModelMapping) {
+    init(view: TodayView, interactor: TodayInteracting, router: TodayRouting, mapper: TodayViewModelMapping) {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -38,8 +38,8 @@ extension TodayPresenter: TodayPresenting {
         }
     }
 
-    func btnShareTap(param: UIImage) {
-        router.presentShareAction(with: [param])
+    func onShare(param: UIImage) {
+        router.presentShareView(with: param)
     }
 }
 

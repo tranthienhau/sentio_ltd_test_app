@@ -2,7 +2,7 @@
 //  Common.swift
 //  SentioWeatherTests
 //
-//  Created by Duy Nguyen on 8/22/21.
+//  Created by Hau Tran on 8/22/21.
 //
 
 import Foundation
@@ -38,7 +38,8 @@ var weatherForecastResponse = (
                 seaLevel: 0,
                 groundLevel: 0,
                 humidity: 0,
-                temperatureKf: 0.0),
+                temperatureKf: 0.0
+            ),
             weather: [
                 WeatherInfoResponse(id: 1, main: "main", description: "", icon: ""),
                 WeatherInfoResponse(id: 2, main: "main", description: "", icon: ""),
@@ -51,7 +52,7 @@ var weatherForecastResponse = (
             sys: SysInfoResponse(pod: "S"),
             visibility: 0,
             pop: 0.0
-        )
+        ),
     ],
     location: LocationResponse(
         id: 0,

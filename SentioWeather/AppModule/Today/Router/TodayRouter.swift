@@ -2,13 +2,13 @@
 //  TodayRouter.swift
 //  SentioWeather
 //
-//  Created by DatNguyen on 22/08/2021.
+//  Created by Hau Tran on 22/08/2021.
 //
 
 import UIKit
 
-protocol TodayRoutering {
-    func presentShareAction(with param: [UIImage])
+protocol TodayRouting {
+    func presentShareView(with param: UIImage)
 }
 
 class TodayRouter {
@@ -19,9 +19,9 @@ class TodayRouter {
     }
 }
 
-extension TodayRouter: TodayRoutering {
-    func presentShareAction(with param: [UIImage]) {
-        let activity = UIActivityViewController(activityItems: param, applicationActivities: nil)
+extension TodayRouter: TodayRouting {
+    func presentShareView(with param: UIImage) {
+        let activity = UIActivityViewController(activityItems: [param], applicationActivities: nil)
         viewController?.present(activity, animated: true)
     }
 }

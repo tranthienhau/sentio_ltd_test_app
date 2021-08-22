@@ -35,6 +35,7 @@
 		268103B726D284BF00A4BC7E /* TodayInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103B626D284BF00A4BC7E /* TodayInteractorTests.swift */; };
 		268103E126D28CD100A4BC7E /* ForecastInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103E026D28CD100A4BC7E /* ForecastInteractorTests.swift */; };
 		268103E726D28D4000A4BC7E /* StringFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268103E626D28D4000A4BC7E /* StringFormatterTests.swift */; };
+		2681041D26D2934F00A4BC7E /* TodayRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681041C26D2934F00A4BC7E /* TodayRouterMock.swift */; };
 		26D5254F26D0A932005D73E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5254E26D0A932005D73E6 /* AppDelegate.swift */; };
 		26D5255326D0A932005D73E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5255226D0A932005D73E6 /* ViewController.swift */; };
 		26D5255626D0A932005D73E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D5255426D0A932005D73E6 /* Main.storyboard */; };
@@ -131,6 +132,7 @@
 		268103B626D284BF00A4BC7E /* TodayInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractorTests.swift; sourceTree = "<group>"; };
 		268103E026D28CD100A4BC7E /* ForecastInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastInteractorTests.swift; sourceTree = "<group>"; };
 		268103E626D28D4000A4BC7E /* StringFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatterTests.swift; sourceTree = "<group>"; };
+		2681041C26D2934F00A4BC7E /* TodayRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayRouterMock.swift; sourceTree = "<group>"; };
 		26D5254B26D0A932005D73E6 /* SentioWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentioWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D5254E26D0A932005D73E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D5255226D0A932005D73E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,7 +194,7 @@
 		AAB9A06926D10505006C10F9 /* ForecastViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewRouter.swift; sourceTree = "<group>"; };
 		AAC27D7C26D1482D007663F4 /* AppResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResource.swift; sourceTree = "<group>"; };
 		AAD6903D26D27DA200BE540D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		AAD6903F26D2898200BE540D /* TodayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayRouter.swift; path = SentioWeather/Extensions/TodayRouter.swift; sourceTree = SOURCE_ROOT; };
+		AAD6903F26D2898200BE540D /* TodayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayRouter.swift; path = SentioWeather/AppModule/Today/Router/TodayRouter.swift; sourceTree = SOURCE_ROOT; };
 		C14B9CF00BA377FD95B483E7 /* Pods-SentioWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather/Pods-SentioWeather.release.xcconfig"; sourceTree = "<group>"; };
 		C9273B31DE6CFF52A47824FB /* Pods-SentioWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeatherTests.debug.xcconfig"; path = "Target Support Files/Pods-SentioWeatherTests/Pods-SentioWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA336A0969AAEFFE481C5606 /* Pods-SentioWeather-SentioWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-SentioWeather-SentioWeatherUITests/Pods-SentioWeather-SentioWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				2681037F26D27CED00A4BC7E /* TodayInteractorMock.swift */,
 				2681038926D27D6E00A4BC7E /* TodayViewMock.swift */,
 				2681038E26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift */,
+				2681041C26D2934F00A4BC7E /* TodayRouterMock.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -349,6 +352,14 @@
 				268103E626D28D4000A4BC7E /* StringFormatterTests.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2681041826D292AA00A4BC7E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AAD6903F26D2898200BE540D /* TodayRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		26D5254226D0A932005D73E6 = {
@@ -440,6 +451,7 @@
 		26DEB1B126D0B243004681F3 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				2681041826D292AA00A4BC7E /* Router */,
 				26DEB24826D0F115004681F3 /* Mapper */,
 				26DEB24226D0EFF1004681F3 /* ViewModel */,
 				AAB9A05226D0EB9C006C10F9 /* Interactor */,
@@ -693,14 +705,6 @@
 				AA9A4AB126D2119F00C88E36 /* ErrorView.xib */,
 			);
 			path = ErrorView;
-			sourceTree = "<group>";
-		};
-		AAB9A05026D0EB80006C10F9 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				AAD6903F26D2898200BE540D /* TodayRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		AAB9A05126D0EB92006C10F9 /* Presenter */ = {
@@ -1139,6 +1143,7 @@
 				2681038026D27CED00A4BC7E /* TodayInteractorMock.swift in Sources */,
 				2681038F26D27DBD00A4BC7E /* TodayViewModelMapperMock.swift in Sources */,
 				2681039426D27EC600A4BC7E /* Common.swift in Sources */,
+				2681041D26D2934F00A4BC7E /* TodayRouterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

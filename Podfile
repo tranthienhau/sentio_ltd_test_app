@@ -8,7 +8,6 @@ target 'SentioWeather' do
   # Pods for SentioWeather
   pod 'Swinject'
   pod 'Moya'
-  pod 'NVActivityIndicatorView'
   pod 'SwiftLint'
   pod 'SDWebImage'
   pod 'Firebase/Firestore'
