@@ -40,6 +40,7 @@ protocol LocationServicing {
 final class LocationService: NSObject, LocationServicing {
     let locationManager: CLLocationManager
     private var completion: ((Result<(Double, Double), Error>) -> Void)?
+    private var cachedUserLocation: CLLocation?
     override init() {
         locationManager = CLLocationManager()
         super.init()
@@ -53,7 +54,19 @@ final class LocationService: NSObject, LocationServicing {
 
     func userLocation(completion: @escaping (Result<(Double, Double), Error>) -> Void) {
         self.completion = completion
-        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+        } else {
+            requestLocation()
+        }
+    }
+
+    private func requestLocation() {
+        if let cachedLocation = cachedUserLocation {
+            completion?(.success((cachedLocation.coordinate.latitude, cachedLocation.coordinate.longitude)))
+            return
+        }
+        locationManager.requestLocation()
     }
 }
 
@@ -61,7 +74,7 @@ extension LocationService: CLLocationManagerDelegate {
     func locationManager(_: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
-            locationManager.requestLocation()
+            requestLocation()
         case .denied:
             completion?(.failure(LocationServiceError.authorizationDenied))
         case .notDetermined:

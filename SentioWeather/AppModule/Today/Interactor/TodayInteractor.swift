@@ -8,9 +8,7 @@
 import Foundation
 
 protocol TodayInteracting {
-    func fetchWeatherData(
-        latitude: Double,
-        longitude: Double,
+    func weatherData(
         completion: @escaping (Result<WeatherForecastResponse, Error>) -> Void
     )
 }
@@ -28,9 +26,7 @@ class TodayInteractor {
 }
 
 extension TodayInteractor: TodayInteracting {
-    func fetchWeatherData(
-        latitude: Double,
-        longitude: Double,
+    func weatherData(
         completion: @escaping (Result<WeatherForecastResponse, Error>) -> Void
     ) {
         locationService.userLocation { [weak self] result in
