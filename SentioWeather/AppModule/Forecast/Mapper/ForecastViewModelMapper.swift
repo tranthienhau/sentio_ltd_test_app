@@ -33,7 +33,7 @@ final class ForecastViewModelMapper: ForecastViewModelMapping {
                 let iconUrl = self.stringFormatter.icon(name: item.weather.first?.icon)
                 return ForecastItemViewModel(
                     time: time,
-                    description: item.weather.description,
+                    description: item.weather.first?.main ?? "",
                     temperature: weather,
                     iconUrl: iconUrl
                 )
