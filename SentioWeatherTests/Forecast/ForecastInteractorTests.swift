@@ -1,5 +1,5 @@
 //
-//  TodayInteractorTests.swift
+//  ForecastInteractorTests.swift
 //  SentioWeatherTests
 //
 //  Created by Duy Nguyen on 8/22/21.
@@ -9,8 +9,8 @@ import XCTest
 @testable import SentioWeather
 import Nimble
 
-class TodayInteractorTests: XCTestCase {
-    var interactor: TodayInteractor!
+class ForecastInteractorTests: XCTestCase {
+    var interactor: ForecastInteractor!
     var service: WeatherServiceMock!
     var locationService: LocationServiceMock!
     
@@ -21,7 +21,7 @@ class TodayInteractorTests: XCTestCase {
         super.setUp()
         service = WeatherServiceMock()
         locationService = LocationServiceMock()
-        interactor = TodayInteractor(service: service, locationService: locationService)
+        interactor = ForecastInteractor(service: service, locationService: locationService)
     }
     
     override func tearDown() {

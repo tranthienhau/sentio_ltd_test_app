@@ -17,6 +17,7 @@ target 'SentioWeather' do
   target 'SentioWeatherTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Nimble'
   end
 
   target 'SentioWeatherUITests' do

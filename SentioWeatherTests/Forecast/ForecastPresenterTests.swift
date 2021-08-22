@@ -1,5 +1,5 @@
 //
-//  TodayPresenterTests.swift
+//  ForecastPresenterTests.swift
 //  SentioWeatherTests
 //
 //  Created by Duy Nguyen on 8/22/21.
@@ -8,18 +8,18 @@
 import XCTest
 @testable import SentioWeather
 
-class TodayPresenterTests: XCTestCase {
-    var interactor: TodayInteractorMock!
-    var view: TodayViewMock!
-    var mapper: TodayViewModelMapperMock!
-    var presenter: TodayPresenter!
+class ForecastPresenterTests: XCTestCase {
+    var interactor: ForecastInteractorMock!
+    var view: ForecastViewMock!
+    var mapper: ForecastViewModelMapperMock!
+    var presenter: ForecastPresenter!
     
     override func setUp() {
         super.setUp()
-        interactor = TodayInteractorMock()
-        view = TodayViewMock()
-        mapper = TodayViewModelMapperMock()
-        presenter = TodayPresenter(view: view, interactor: interactor, mapper: mapper)
+        interactor = ForecastInteractorMock()
+        view = ForecastViewMock()
+        mapper = ForecastViewModelMapperMock()
+        presenter = ForecastPresenter(view: view, interactor: interactor, mapper: mapper)
     }
 
     override func tearDown() {
@@ -39,7 +39,7 @@ class TodayPresenterTests: XCTestCase {
         
         // assert
         XCTAssertTrue(interactor.invocations.contains { $0 == .weatherData })
-        XCTAssertFalse(mapper.invocations.contains { $0 == .todayViewModel })
+        XCTAssertFalse(mapper.invocations.contains { $0 == .forecastViewModels })
         XCTAssertTrue(view.invocations.contains { $0 == .showError })
     }
     
@@ -52,7 +52,7 @@ class TodayPresenterTests: XCTestCase {
         
         // assert
         XCTAssertTrue(interactor.invocations.contains { $0 == .weatherData })
-        XCTAssertTrue(mapper.invocations.contains { $0 == .todayViewModel })
+        XCTAssertTrue(mapper.invocations.contains { $0 == .forecastViewModels })
         XCTAssertTrue(view.invocations.contains { $0 == .showData })
     }
 }

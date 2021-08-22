@@ -1,5 +1,5 @@
 //
-//  TodayViewMock.swift
+//  ForecastViewMock.swift
 //  SentioWeatherTests
 //
 //  Created by Duy Nguyen on 8/22/21.
@@ -8,7 +8,7 @@
 import Foundation
 @testable import SentioWeather
 
-final class TodayViewMock: TodayView {
+final class ForecastViewMock: ForecastView {
     enum Invocation {
         case showError
         case showData
@@ -20,7 +20,7 @@ final class TodayViewMock: TodayView {
         invocations.append(.showError)
     }
     
-    func showData(viewModel: TodayViewModel) {
+    func showData(viewModels: [ForecastViewModel]) {
         invocations.append(.showData)
     }
 }

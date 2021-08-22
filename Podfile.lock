@@ -287,6 +287,7 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
+  - Nimble (9.2.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
@@ -301,6 +302,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - FirebaseFirestoreSwift
   - Moya
+  - Nimble
   - NVActivityIndicatorView
   - SDWebImage
   - SwiftLint
@@ -323,6 +325,7 @@ SPEC REPOS:
     - leveldb-library
     - Moya
     - nanopb
+    - Nimble
     - NVActivityIndicatorView
     - PromisesObjC
     - SDWebImage
@@ -345,12 +348,13 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 7bf5ca349af96ffdd9755243c937adc657bc5519
+PODFILE CHECKSUM: bb4c910a930acbdcfd8f55371011f912ef25b20b
 
 COCOAPODS: 1.10.1

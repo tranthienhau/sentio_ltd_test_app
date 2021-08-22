@@ -7,12 +7,14 @@
 
 @testable import SentioWeather
 
-final class WeatherRouterMock: WeatherRouting {
+final class WeatherTabRouterMock: WeatherTabRouting {
     enum Invocation {
         case setupTabBar
     }
     
     var invocations: [Invocation] = []
     
-    
+    func setupTabBars() {
+        invocations.append(.setupTabBar)
+    }
 }
