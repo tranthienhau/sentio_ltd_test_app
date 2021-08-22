@@ -24,6 +24,10 @@ enum TemperatureMetric {
 protocol StringFormatting {
     func temperature(temperature: Double, metric: TemperatureMetric) -> String
     func icon(name: String?) -> String?
+    func pop(value: Double?) -> String?
+    func windSpeed(value: Double?) -> String?
+    func groundLevel(value: Int?) -> String?
+    func rain(value: Double?) -> String?
 }
 
 final class StringFormatter: StringFormatting {
@@ -34,5 +38,25 @@ final class StringFormatter: StringFormatting {
     func icon(name: String?) -> String? {
         guard let name = name else { return nil }
         return "http://openweathermap.org/img/w/" + name + ".png"
+    }
+
+    func pop(value: Double?) -> String? {
+        guard let value = value else { return nil }
+        return "\(value * 100)%"
+    }
+
+    func windSpeed(value: Double?) -> String? {
+        guard let value = value else { return nil }
+        return "\(value) km/h"
+    }
+
+    func groundLevel(value: Int?) -> String? {
+        guard let value = value else { return nil }
+        return "\(value) hPa"
+    }
+
+    func rain(value: Double?) -> String? {
+        guard let value = value else { return nil }
+        return "\(value) mm"
     }
 }

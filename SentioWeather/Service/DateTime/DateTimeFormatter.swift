@@ -22,7 +22,9 @@ final class DateTimeFormatter: DateTimeFormatting {
     }
 
     func isSameDate(lhs: Date, rhs: Date) -> Bool {
-        return Calendar.current.compare(lhs, to: rhs, toGranularity: .day) == .orderedSame
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = NSTimeZone(name: "GMT")! as TimeZone
+        return calendar.compare(lhs, to: rhs, toGranularity: .day) == .orderedSame
     }
 
     func time(from timestamp: Double) -> String {
