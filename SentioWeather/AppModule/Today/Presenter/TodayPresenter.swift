@@ -23,7 +23,7 @@ class TodayPresenter {
 
 extension TodayPresenter: TodayPresenting {
     func onViewWillAppear() {
-        interactor.fetchWeatherData(latitude: 1.3116719, longitude: 103.8336574) { [weak self] result in
+        interactor.weatherData { [weak self] result in
             guard let self = self else { return }
             switch result {
             case let .success(response):

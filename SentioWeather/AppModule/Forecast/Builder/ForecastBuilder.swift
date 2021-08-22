@@ -20,8 +20,9 @@ final class ForecaseBuilder {
         let service: WeatherServicing = DependencyContainer.sharedInstance.getService()
         let formatter: DateTimeFormatting = DependencyContainer.sharedInstance.getService()
         let stringFormatter: StringFormatting = DependencyContainer.sharedInstance.getService()
+        let locationService: LocationServicing = DependencyContainer.sharedInstance.getService()
         let mapper = ForecastViewModelMapper(formatter: formatter, stringFormatter: stringFormatter)
-        let interactor = ForecastInteractor(service: service)
+        let interactor = ForecastInteractor(service: service, locationService: locationService)
         let presenter = ForecastPresenter(view: view, interactor: interactor, mapper: mapper)
         view.presenter = presenter
         return view
