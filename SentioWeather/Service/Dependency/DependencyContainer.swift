@@ -8,7 +8,7 @@
 import Swinject
 
 class DependencyContainer {
-    public static let sharedInstance = DependencyContainer()
+    static let sharedInstance = DependencyContainer()
     private let container = Container()
 
     func registerDefaultServices() {
@@ -26,6 +26,9 @@ class DependencyContainer {
         }
         register(service: WeatherServicing.self) { resolver in
             WeatherService(repository: resolver.resolve(WeatherRepositoring.self)!)
+        }
+        register(service: LocationServicing.self) { _ in
+            LocationService()
         }
     }
 
